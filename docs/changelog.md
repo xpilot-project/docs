@@ -5,7 +5,7 @@
 - Client configuration file is now serialized in JSON. Upgrades from earlier versions will require reconfiguration.
 - Add volume knob control override option
 - Add option to change the aircraft label distance
-- Improve NetMQ message queueing
+- Improve NetMQ message queuing
 - Update XPMP2 library
 
 ## 1.3.20-Alpha (07/14/2020)
