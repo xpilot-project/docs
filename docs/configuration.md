@@ -3,7 +3,7 @@
 !> **Upgrading from v1.3.20 or earlier:** Beginning with v1.3.21, xPilot uses JSON to store the client configuration. You will need to reconfigure your settings after upgrading.
 
 ## Installation
-After you download the installer (which can be obtained from the [xPilot homepage](https://xpilot.clowd.io/)), double-click the executable to launch the installer. You will be prompted to choose the root folder of your X-Plane installation (this is where the X-Plane.exe lives). You will then be prompted to choose an installation location for the xPilot client. It is recommended that you leave the default location selected as the local application data folder to avoid any file permission problems later.
+After you download the installer (which can be obtained from the [xPilot homepage](http://xpilot-project.org)), double-click the executable to launch the installer. You will be prompted to choose the root folder of your X-Plane installation (this is where the X-Plane.exe lives). You will then be prompted to choose an installation location for the xPilot client. It is recommended that you leave the default location selected as the local application data folder to avoid any file permission problems later.
 
 When the installation is complete, you will have the option of launching xPilot.
 
@@ -220,6 +220,8 @@ In addition to using the xPilot Client to communicate via text, you can also use
 To request a controller's ATIS, send the command `.atis <Callsign>` in the main Messages tab. For example `.atis LAX_TWR`.
 
 To open a new private message tab, use the command `.chat <Callsign> <Message>`. For example `.chat LAX_TWR Do you have a minute for a question?`. Alternatively, you can also open a private message tab without sending an initial message by using just .chat CALLSIGN.
+
+To send a message, press the <Enter> key on your keyboard.
 
 ![Text Message Console PM](images/TextMessageConsolePM.png)
 
