@@ -1,5 +1,12 @@
 # Changelog
 
+## xPilot 1.3.21 (08/01/2020)
+- xPilot is now open-source
+- Client configuration file is now serialized in JSON. Upgrades from earlier versions will require reconfiguration.
+- Add volume knob control override option
+- Improve NetMQ message queueing
+- Update XPMP2 library
+
 ## 1.3.20-Alpha (07/14/2020)
 - Fix issue that caused X-Plane to crash when hiding or dragging the Notification Bar in VR
 - Fix issue that caused X-Plane to crash due to an X-Plane SDK function being called outside the main X-Plane thread
