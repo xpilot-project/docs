@@ -44,7 +44,7 @@ This section contains a list of miscellaneous configuration options.
 *  **Automatically check for xPilot updates** if checked, xPilot will automatically check for new versions when launched. It is recommended you leave this option checked. The dropdown box allows you to choose which update channel to use when checking for updates. If you're unsure of which channel, leave it as *Stable*.
 * **Keep xPilot window visible** if checked, the xPilot pilot client window will stay on top of all other windows.
 
-**X-Plane Configuration**\
+**X-Plane Configuration**
 * **Path to X-Plane.exe** click the *Browse* button and browse to the path where your X-Plane instance is installed. If you have more than one X-Plane version installed, you will need to update the path and reload xPilot before connecting to the network.
 * **X-Plane Plugin Port** xPilot will use this port number to communicate with the X-Plane plugin via TCP socket. The plugin port number **must** match the plugin port defined in the xPilot Preferences in X-Plane. **If you change the port number, you must restart X-Plane and xPilot.**
 * **Aircraft volume knobs control radio volume** if this option is checked, you can use the volume knobs in your aircraft to control the COM1 and COM2 volumes (if the aircraft uses the default volume datarefs). If this option is unchecked, you will have to manually adjust the volumes using the volume sliders in the **Audio/Push to Talk (PTT)** tab.
