@@ -131,6 +131,8 @@ The transparent notification panel is enabled by default. When a notification is
 ## CSL Model Configuration
 xPilot has no complex or special model matching rule sets that need to be installed or configured. You must have at least one CSL model set package installed before you can use xPilot. The most popular model set is [Bluebell CSL](https://forums.x-plane.org/index.php?/files/file/37041-bluebell-obj8-csl-packages/).
 
+Within X-Plane, open the xPilot Preferences window (`Plugins > xPilot > Preferences`) and locate the *CSL Model Configuration* section.
+
 You must define the path(s) to where your CSL model sets are installed. You can define up to seven (7) different paths, for example, you could have Bluebell models and X-CSL models.
 
 To define a path to your CSL models, click the Browse button and navigate to the folder where the models are installed. xPilot will search up to 5 hierarchical levels deep for the xsb_aircraft.txt files. CSL paths can be enabled or disabled by using the checkbox next to each path. If the checkbox is checked, the CSL models that live in the path will be automatically loaded during X-Plane startup.
@@ -141,7 +143,7 @@ When you load xPilot, it will verify that you have CSL models properly configure
 
 ![CSL Model Validation](images/CSLModelValidation.png)
 
-You must restart both X-Plane and xPilot after making changes to the CSL Model configuration for it to take effect.
+!> You must restart both X-Plane and xPilot after making changes to the CSL Model configuration for it to take effect.
 
 ## X-Plane Command Bindings
 xPilot has numerous commands that can be binded to multiple keyboard keys, joystick buttons or switches within x-Plane. If you are not familiar with how to set up command shortcuts in X-Plane, please refer to the [X-Plane 11 manual](https://www.x-plane.com/manuals/desktop/index.html#configuringkeyboardshortcuts) for more information.
