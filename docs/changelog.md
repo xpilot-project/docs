@@ -1,5 +1,13 @@
 # Changelog
 
+## xPilot 1.3.22 (08/02/2020)
+- Enforce UTF-8 encoding in VATSIM datafeed data
+- Fix form scaling
+- Disable "Connect" button if no CSL paths are defined
+- Fix flight plan import from .vfp file
+- Allow main interface form to be resized smaller
+- Fix missing SoundManager implementation (this will fix the missing notification sounds issue)
+
 ## xPilot 1.3.21 (08/01/2020)
 - xPilot is now open-source
 - Client configuration file is now serialized in JSON. Upgrades from earlier versions will require reconfiguration.
