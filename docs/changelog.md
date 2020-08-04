@@ -1,5 +1,9 @@
 # Changelog
 
+## xPilot 1.3.23 (08/03/2020)
+- Fix "Waiting for X-Plane connection..." issue
+- Only change radio volume datarefs if volume knob control override is enabled (fixes issue with volume level not saving)
+
 ## xPilot 1.3.22 (08/02/2020)
 - Enforce UTF-8 encoding in VATSIM datafeed data
 - Fix form scaling
