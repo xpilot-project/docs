@@ -1,16 +1,16 @@
 # Changelog
 
-## xPilot 1.3.26 - 08/07/2020
+## 1.3.26 - 08/07/2020
 - Update CSL download endpoint
 - Add additional X-Plane path validation on client startup. If defined path is invalid or not set, prompt user to set path and choose from a list of path(s) based on x-plane_install_11.txt
 - Rebuild configuration file if unable to load it
 - Improve textual information on CSL Configuration step
 
-## xPilot 1.3.25 - 08/07/2020
+## 1.3.25 - 08/07/2020
 - Fix missing aircraft issue (attempt #2)
 - Change how app config json string is saved to file (attempt to fix corrupt app config)
 
-## xPilot 1.3.24 - 08/06/2020
+## 1.3.24 - 08/06/2020
 - Add "Guided Setup" for new installations of xPilot
 - Add ability to run xPilot on two instances of X-Plane (one copy for the sim and the other for visuals)
 - Fix issue with missing aircraft
@@ -22,11 +22,11 @@
 - Add additional mutex checks to airplane/interpolation stack maps to ensure proper synchronization
 - Fix issue with max label distance/label cutoff options not being saved
 
-## xPilot 1.3.23 - 08/03/2020
+## 1.3.23 - 08/03/2020
 - Fix "Waiting for X-Plane connection..." issue
 - Only change radio volume datarefs if volume knob control override is enabled (fixes issue with volume level not saving)
 
-## xPilot 1.3.22 - 08/02/2020
+## 1.3.22 - 08/02/2020
 - Enforce UTF-8 encoding in VATSIM datafeed data
 - Fix form scaling
 - Disable "Connect" button if no CSL paths are defined
@@ -34,7 +34,7 @@
 - Allow main interface form to be resized smaller
 - Fix missing SoundManager implementation (this will fix the missing notification sounds issue)
 
-## xPilot 1.3.21 - 08/01/2020
+## 1.3.21 - 08/01/2020
 - xPilot is now open-source
 - Client configuration file is now serialized in JSON. Upgrades from earlier versions will require reconfiguration.
 - Add volume knob control override option
