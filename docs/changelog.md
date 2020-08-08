@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.27 - 08/08/2020
+- Automatically detect X-Plane path which fixes "unauthorized client" error
+- Remove "X-Plane.exe Path" option from xPilot Settings
+
 ## 1.3.26 - 08/07/2020
 - Update CSL download endpoint
 - Add additional X-Plane path validation on client startup. If defined path is invalid or not set, prompt user to set path and choose from a list of path(s) based on x-plane_install_11.txt
