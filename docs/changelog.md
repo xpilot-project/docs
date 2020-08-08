@@ -4,7 +4,7 @@
 - Update CSL download endpoint
 - Add additional X-Plane path validation on client startup. If defined path is invalid or not set, prompt user to set path and choose from a list of path(s) based on x-plane_install_11.txt
 - Rebuild configuration file if unable to load it
-- Improve text on CSL Configuration step
+- Improve textual information on CSL Configuration step
 
 ## xPilot 1.3.25 - 08/07/2020
 - Fix missing aircraft issue (attempt #2)
