@@ -1,5 +1,5 @@
 * [Introduction](/)
 * [Getting Started](getting-started)
-* [How To](configuration)
+* [User Guide](user-guide)
 * [Getting Help](getting-help)
 * [Change Log](changelog)
