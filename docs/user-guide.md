@@ -1,4 +1,4 @@
-# Configuration
+# User Guide
 
 !> **Upgrading from v1.3.20 or earlier:** Beginning with v1.3.21, xPilot uses JSON to store the client configuration. You will need to reconfigure your settings after upgrading.
 
