@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.3.29 - 08/14/2020
+- Installer updated to automatically install the xPilot plugin on all X-Plane installations found on the computer (uses the "x-plane_install_11.txt" to locate the paths).
+- Installer will stop the user from starting the installation if X-Plane.exe or xPilot.exe is running.
+- Uninstaller will now remove the xPilot plugin from X-Plane.
+- Client and Plugin now use Dealer/Router ZMQ socket types. Previously, ZMQ PAIR sockets were used, but were not designed for true TCP communication.
+- ZeroMQ library (libzmq) downgraded to v4.3.1. This fixes a CTD when loading X-Plane for some users.
+- Flight plan form updated to require equipment suffix when sending flight plan. A "what’s this" link has been added above the equipment suffix that links to the VATSIM PRC.
+- Plugin hash verification processing moved to within the plugin. This fixes an issue with using networked computers (sim and visuals) not being able to connect to xPilot.
+- Default TCP port number (for new installations) changed to 43001 to avoid conflict with XSwiftBus.
+- "Configuration Required" notification text has been updated to remove the requirement to set the X-Plane path.
+- Improve radio volume handling:
+    - Volume sliders and aircraft volume dataref are now synchronized
+    - Changed volume slider range which should allow for more decibel granularity
+    - Remove checkbox to "override volume with volume knobs"
+
 ## 1.3.27 - 08/08/2020
 - Automatically detect X-Plane path which fixes "unauthorized client" error
 - Remove "X-Plane.exe Path" option from xPilot Settings
