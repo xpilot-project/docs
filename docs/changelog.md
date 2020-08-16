@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.30 - 08/16/2020
+- Remove external scripts from installer that were causing false positives with Antivirus software preventing the X-Plane plugin from being installed properly
+- Add the ability for multiple Visual IP machines
+
 ## 1.3.29 - 08/14/2020
 - Installer updated to automatically install the xPilot plugin on all X-Plane installations found on the computer (uses the "x-plane_install_11.txt" to locate the paths).
 - Installer will stop the user from starting the installation if X-Plane.exe or xPilot.exe is running.
