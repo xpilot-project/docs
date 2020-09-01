@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.3.31 - 08/31/2020
+- Implement a "dynamic range compressor" to try to reduce or stop the stray high-volume levels that cause audio clipping. You can read more about it here: https://markheath.net/post/limit-audio-naudio
+- Fix DirectoryNotFoundException during Guided Setup.
+- Fix ArgumentOutOfRangeException during Guided Setup when setting the input volume level.
+- Fix issue with radio volumes not being updated outside of the settings window.
+- Re-implement "Aircraft volume knobs control volume" setting option. If this option is checked, the radio volume can be controlled using the volume knobs within the aircraft. Additionally, if this option is checked, the volume level will not be saved and will reset to the aircraft volume knob level each time xPilot and X-Plane are started.
+- Add "Tune COM1 Frequency" option to controller list context menu in the xPilot client.
+- Installer updated to remove the automatic X-Plane path detection. The X-Plane path step has been re-implemented.
+
 ## 1.3.30 - 08/16/2020
 - Remove external scripts from installer that were causing false positives with Antivirus software preventing the X-Plane plugin from being installed properly
 - Add the ability for multiple Visual IP machines
