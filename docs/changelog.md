@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.3.34 - 01/11/2021
+- Fix data race during CSL object instance deletion.
+- Fix duplicate characters in Text Message Console.
+
+## 1.3.32 - 10/24/2020
+- Possible fix for the CTD when the CreateInstance function is called.
+- Update XPMP2 library. Previously, the CSL2XSB script was needed to convert CSL model packages (like X-CSL) to work properly with xPilot. Now, xPilot will now automatically convert the CSL model object on demand when it's used.
+
 ## 1.3.31 - 08/31/2020
 - Implement a "dynamic range compressor" to try to reduce or stop the stray high-volume levels that cause audio clipping. You can read more about it here: https://markheath.net/post/limit-audio-naudio
 - Fix DirectoryNotFoundException during Guided Setup.
