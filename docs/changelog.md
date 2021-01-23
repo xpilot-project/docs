@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.3.36 - 01/23/2021
+- Remove mutex locks from airplane management class
+- Nearby ATC Window mouse click events updated. Single-click will request the controller info/text ATIS. Double-click will tune the COM1 frequency to the selected controller/station.
+
+## 1.3.35 - 01/18/2021
+- Refactor callback function queuing - possible fix for random crashes
+
 ## 1.3.34 - 01/11/2021
 - Fix data race during CSL object instance deletion.
 - Fix duplicate characters in Text Message Console.
