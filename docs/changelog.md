@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.3.37 - 01/27/2021
+- Add nullptr check for XPLMInstanceRef, possible fix for random crashes
+
 ## 1.3.36 - 01/23/2021
 - Remove mutex locks from airplane management class
 - Nearby ATC Window mouse click events updated. Single-click will request the controller info/text ATIS. Double-click will tune the COM1 frequency to the selected controller/station.
