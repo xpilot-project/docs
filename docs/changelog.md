@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.38 - 02/01/2021
+- Another attempt to fix the random crashes.
+- Update ImGui library version.
+- Update the layout of the xPilot Plugin Settings Window (also renamed from "Preferences" to "Settings").
+- Clean-up messages logged by xPilot. Added option to specify the logging level in the settings.
+
 ## 1.3.37 - 01/27/2021
 - Add nullptr check for XPLMInstanceRef, possible fix for random crashes
 
