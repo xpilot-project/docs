@@ -19,6 +19,7 @@
   - [Shared Cockpit/Observer Mode](client?id=shared-cockpit-observer-mode)
   - [Downloading Updates](client?id=downloading-updates)
 - [X-Plane Interface](xplane)
+  - [Settings](xplane?id=settings)
   - [Radio Push to Talk](xplane?id=radio-push-to-talk)
 - [Getting Help](getting-help?id=getting-help)
 - [X-Plane Quit Unexpectedly](xplane-crash)
