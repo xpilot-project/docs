@@ -1,0 +1,26 @@
+# FAQ
+
+* **Where is the xPilot client config file?**
+  
+  The configuration file for the xPilot client can be found...
+    * Windows: `C:/Users/<USER>/AppData/Local/org.vatsim.xpilot/AppConfig.json`
+    * macOS: `~/Library/Application Support/org.vatsim.xpilot/AppConfig.json`
+    * Linux: `~/.local/storage/org.vatsim.xpilot/AppConfig.json`
+
+* **I'm being constantly disconnected because my frame rates are too low**
+xPilot requires that the user always maintains at least 20 FPS during flight. The reason for this is to prevent a phenomena called "time dilation", which is when the simulation rate of X-Plane drops below real-time, which results in an aircraft flying slower on radar than what their groundspeed reports. X-Plane enforces a strict 20 FPS minimum to ensure the simulation rate runs in real-time. You can read more about this here: https://www.x-plane.com/kb/the-simulators-measurement-of-time-is-slow/
+
+* **I can't see any TCAS targets on my plane's radar**
+Make sure you don’t have any other plugins installed that could be interfering with xPilot (e.g. XSwiftBus, XSB, X-IvAP, etc.)
+
+* **Network Error: The server failed to respond to the authentication challenge**
+This is typically caused by a poor connection between you and the network server you are connected to. Try changing to a different server and try again.
+
+* **I can’t transmit and/or receive audio in my aircraft. The COM radios are grayed out in xPilot**
+Make sure your radio stack in the aircraft is properly configured for TX and RX. In some cases, the aircraft model may not have a working audio panel, in which case you can trick xPilot into enabling TX and/or RX via a dot command. To enable TX on a specific COM radio, use the command `.tx com#`. To enable RX on a specific COM radio, use the command `.rx com# on|off`. For example, to force COM1 to transmit, you would type `.tx com1`. Similarly, to enable RX on COM2, you would use the command `.rx com2 on`.
+
+* **xPilot doesn't connect to X-Plane - stuck on "Waiting for X-Plane Connection"**
+If xPilot is indefinitely stuck on the "Waiting for X-Plane Connection" message, this means that xPilot is unable to communicate with X-Plane via a UDP port. Ensure that X-Plane is running and that it is not blocked in your Windows Firewall (https://www.x-plane.com/kb/allowing-x-plane-through-your-firewall/). Also ensure that the UDP ports in X-Plane (`Settings > Network > UDP Ports`) are set to `49010`, `49000` and `49001`, respectively (these are the default port numbers). xPilot specifically uses port 49000 ("Port we receive on (legacy)") to communicate with X-Plane. If you do need to make a change to the UDP port(s), make sure to restart X-Plane for the changes to take effect.
+
+* **Error connecting to voice server: Connect failed (Forbidden -)**
+If you recently created or reactivated your VATSIM account, you will need to wait up to 24-hours for your account to synchronize. Until your account is synchronized, you will not be able to use voice &mdash; only text.
