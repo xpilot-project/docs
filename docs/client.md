@@ -71,6 +71,8 @@ If an incoming text radio message is directed at you specifically, an alert soun
 
 ![Radios No Power](media/RadiosNoPower.png)
 
+!> If xPilot is having trouble syncing your radio transmit and receive status, you can force xPilot to transmit and/or receive on a specific radio instead.<br/><br/>To force xPilot to receive on a specific COM radio, use the `.rx` dot command. For example, to force receiving on COM1, you would enter `.rx com1 on` in the command line and press enter.<br/><br/>To force xPilot to transmit on a specific COM radio, use the `.tx` dot command. For example to force transmitting on COM2, you would type `.tx com2` in the command line and press enter.<br/><br/>See the [Dot Commands](client?id=dot-commands) section for more information.
+
 ## SELCAL
 If you specified a SELCAL (Selective Calling) code when connecting to VATSIM, controllers will have the ability to send a SELCAL alert to your aircraft using that code. This is used to get your attention during long flights over areas where standard VHF radio doesn’t have enough range, and noisy HF frequencies are used instead. The pilot will typically turn down the volume so he doesn’t have to listen to the HF static, and controllers will send a SELCAL alert to get his attention when they need to talk to him over HF.
 

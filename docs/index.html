@@ -97,9 +97,20 @@
             themeColor: '#0164AD',
             coverpage: '_coverpage.html',
             loadSidebar: true,
-            loadFooter: true,
             auto2top: true,
-            onlyCover: false
+            plugins: [
+                overrideTitle({
+                    title: 'xPilot for VATSIM'
+                })
+            ]
+        }
+
+        function overrideTitle(config) {
+            return (hook, vm) => {
+                hook.doneEach((content) => {
+                    document.title = config.title
+                });
+            }
         }
     </script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
