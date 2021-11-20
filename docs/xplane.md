@@ -77,3 +77,30 @@ Available X-Plane Commands:
 In addition to using the xPilot Client interface to send or receive text radio messages or private messages, you can use the Text Message Console in X-Plane. You can open the Text Message Console through the X-Plane menu via `Plugins > xPilot > Text Message Console` or by binding a keyboard key or joystick button or switch to quickly toggle the visibility of the window. See the [Command Bindings](xplane?id=command-bindings) section for details.
 
 ![Text Message Console](media/TextMessageConsole.png)
+
+To send a message, type it in the message composition area at the bottom of the window and press enter on your keyboard. Radio text messages sent in the "Messages" tab are sent out on whichever COM frequency you have selected for transmit. Received radio messages directed towards you appear in white text. All other received messages will be gray. Radio messages sent by you will be cyan colored.
+
+The following dot commands are supported in the Text Message Console in X-Plane:
+
+| Command | Description |
+| ---------- |-------------|
+| `.chat <Callsign>` | Opens a new chat tab for the specified callsign. You can also use `.msg`
+| `.close` | Closes the current chat tab.
+| `.atis <Callsign>` | Requests the controller text information/ATIS for the specified callsign.
+| `.wx <Station>` | Requests the weather (METAR) for the specified station ID. You can also use `.metar`
+| `.clear`| Clears the contents of the active message tab.
+| `.com1 <Frequency>`| Sets the COM1 radio to the specified frequency.
+| `.com2 <Frequency>`| Sets the COM2 radio to the specified frequency.
+| `.rx com# On\|Off`| Toggles receiving on the specified com radio. For example: `.rx com1 on`
+| `.tx com#`| Enables the COM1 or COM2 radio for transmit. For example: `.tx com2`|
+
+Private messages will appear in a separate tab in the Text Message Console window. To close a tab, hover over the tab and click the blue "X" icon that appears. To initiate a new private message, type the command `.chat CALLSIGN` (where CALLSIGN is the callsign of the user you want to send a message to) and press enter. A new tab will open titled with the callsign you specified. Type your message in the message composition area at the bottom of the tab and press enter on your keyboard to send the message.
+
+![Private Message](media/TextMessageConsole_PrivateMessage.png)
+
+## Notification Panel
+All notifications (text radio messages, private messages, network broadcast alerts, server messages, etc.) will appear in the translucent notification panel at the top right of the X-Plane window. If you hover over the notification panel, a scrollbar will appear allowing you to scroll through the messages. The notification panel will automatically hide after a set time. See the [Settings](xplane?id=settings) section for details on how to configure the timeout period.
+
+![Notification Panel](media/NotificationPanel.png)
+
+**VR Users:** Due to limitations with the X-Plane VR API, a VR window cannot be programmatically placed in a specific location. Because of this, the notification panel will be placed front and center each time it opens. As a workaround, toggle the notification panel (either through the plugin menu or via a binded command) to force the panel to stay open and then move it someplace else (like in the co-pilots seat).

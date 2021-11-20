@@ -39,7 +39,7 @@ If you check the box labeled **Disable Radio Effects**, the incoming voice audio
 ## Connecting to VATSIM
 To connect to VATSIM, click the **CONNECT** button. You will see the Connect window. The callsign and aircraft type code field is required. The SELCAL code is optional.
 
-The aircraft type code is the the 3-4 character ICAO identifier code for the aircraft you are flying. This will allow other users to see you in their sim as the correct aircraft type. If you are unsure of the correct identifer, you can use the [ICAO Aircraft Type Designators](https://www.icao.int/publications/doc8643/pages/search.aspx) website to look it up.
+The aircraft type code is the 3-4 character ICAO identifier code for the aircraft you are flying. This will allow other users to see you in their sim as the correct aircraft type. If you are unsure of the correct identifier, you can use the [ICAO Aircraft Type Designators](https://www.icao.int/publications/doc8643/pages/search.aspx) website to look it up.
 
 Press the Connect button when you are ready to connect to the network. If the connection was successful, you will see a message in the main message area, and the Connect button will light blue and its label will change to "Disconnect". If there are controllers within range of your location, they will appear in the controller list on the left hand side of the client. 
 
@@ -61,9 +61,9 @@ In the example below, COM1 is enabled for transmit and receive, as indicated by 
 
 ![Radio Panel](media/RadioPanel.png)
 
-To communicate witha  controller via text radio messages, ensure you have the main "Messages" tab selected, type in your message in the text command line at the bottom of the message area and press Enter on your keyboard to send the message. xPilot will send the text message out as a text radio message on whichever COM frequency you have selected for transmit.
+To communicate with a controller via text radio messages, ensure you have the main "Messages" tab selected, type in your message in the text command line at the bottom of the message area and press Enter on your keyboard to send the message. xPilot will send the text message out as a text radio message on whichever COM frequency you have selected for transmit.
 
-Incoming text radio messages are showin the main messages area. If you are listening (receiving) on more than one COM radio, the text radio message will be prefixed with the frequency it arrived on.
+Incoming text radio messages are shown in the main messages area. If you are listening (receiving) on more than one COM radio, the text radio message will be prefixed with the frequency it arrived on.
 
 If an incoming text radio message is directed at you specifically, an alert sound will play out of your computer's default audio device, and the message will appear in a cyan (light blue) color. Text radio messages directed towards other pilots (or towards no one in particular) will appear in a gray color.
 
@@ -87,18 +87,18 @@ You can also request the controller information using the `.atis` dot command. R
 Flight plans must be filed using the myVATSIM Flight Plan service website. If you click the `Flight Plan` button in the client, your default web browser will open to the myVATSIM website. If you are not authenticated, you will be asked to enter your VATSIM credentials (ID and Password).
 
 ## Private Messages
-Ocassionally, you may wisth to contact other users (pilots or controllers) via private message. Or, they may contact you via private message. When a new private message arrives, a tab will be added with the sender's callsign, highlighted in yellow. When you click on the tab, the message area for that chat will be displayed and the tab text will turn white. The first line will show the user's name. If a new message arrives while the tab is not active, the tab will turn yellow again.
+Occasionally, you may wish to contact other users (pilots or controllers) via private message. Or they may contact you via private message. When a new private message arrives, a tab will be added with the sender’s callsign, highlighted in yellow. When you click on the tab, the message area for that chat will be displayed and the tab text will turn white. The first line will show the user’s name. If a new message arrives while the tab is not active, the tab will turn yellow again.
 
 To reply to a private message, type your message in the command line at the bottom of the chat tab and press enter. Your outgoing message wil appear in the message area in a cyan color. Incoming messages will appear in white.
 
-You can initiate a private chat session by right-clicking on a controller in the controller list and choose "Open Private Chat" from the context menu. This will create a new new tab (or switch to an existing tab if one exists). You can type your message and press enter to send it.
+You can initiate a private chat session by right-clicking on a controller in the controller list and choose "Open Private Chat" from the context menu. This will create a new tab (or switch to an existing tab if one exists). You can type your message and press enter to send it.
 
 You can also initate a private chat session by using the `.chat` dot command. Refer to the section on [Dot Commands](client?id=dot-commands) for details.
 
 ## Dot Commands
 xPilot supports the following dot commands, which can be entered in the command line just below the main message area.
 
-| <div style="width:300px;">Command</div> | Description |
+| Command | Description |
 | ---------- |-------------|
 | `.chat <Callsign> <Message>` | Opens a new chat tab for the specified callsign. You can specify an initial message string to send. If no message string is specified, only a new chat window is opened. You can also use `.msg`
 | `.close` | Closes the current chat tab.
@@ -118,7 +118,7 @@ xPilot supports the following dot commands, which can be entered in the command 
 ## Disconnecting from VATSIM
 When you are ready to disconnect from VATSIM, click the **DISCONNECT** button on the xPilot client. The controller list will be cleared and all the aircraft in the sim will be removed. 
 
-xPilot will automatically disconnect you fro the network if you shut down the sim. You will also be disconnected if you switch airports or load a different flight in the sim.
+xPilot will automatically disconnect you from the network if you shut down the sim. You will also be disconnected if you switch airports or load a different flight in the sim.
 
 ## Shared Cockpit (Observer) Mode
 xPilot supports the ability to connect in observer mode so that your aircraft does not appear to other users on the network. This feature is intended for use with shared cockpit operations. To use this feature, the first pilot should connect to the network normally, and the second pilot should connect in observer mode. The second pilot must use the same callsign as the first pilot, with a letter appended to the end.
