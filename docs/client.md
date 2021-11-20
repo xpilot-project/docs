@@ -98,7 +98,7 @@ You can also initate a private chat session by using the `.chat` dot command. Re
 ## Dot Commands
 xPilot supports the following dot commands, which can be entered in the command line just below the main message area.
 
-| Command | Description |
+| <div style="width:300px;">Command</div> | Description |
 | ---------- |-------------|
 | `.chat <Callsign> <Message>` | Opens a new chat tab for the specified callsign. You can specify an initial message string to send. If no message string is specified, only a new chat window is opened. You can also use `.msg`
 | `.close` | Closes the current chat tab.
