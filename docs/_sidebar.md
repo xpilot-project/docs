@@ -24,6 +24,7 @@
   - [Command Bindings](xplane?id=command-bindings)
   - [Text Message Console](xplane?id=text-message-console)
   - [Notification Panel](xplane?id=notification-panel)
+  - [Nearby ATC](xplane?id=nearby-atc)
 - [Getting Help](getting-help?id=getting-help)
 - [X-Plane Quit Unexpectedly](xplane-crash)
 - [FAQ](faq)

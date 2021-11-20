@@ -104,3 +104,9 @@ All notifications (text radio messages, private messages, network broadcast aler
 ![Notification Panel](media/NotificationPanel.png)
 
 **VR Users:** Due to limitations with the X-Plane VR API, a VR window cannot be programmatically placed in a specific location. Because of this, the notification panel will be placed front and center each time it opens. As a workaround, toggle the notification panel (either through the plugin menu or via a binded command) to force the panel to stay open and then move it someplace else (like in the co-pilots seat).
+
+## Nearby ATC
+
+The Nearby ATC window shows controllers who are within range; the list includes the callsign, name and frequency of the station. There are two action buttons available. The first button will request the station information (controller ATIS) and the second button will tune your COM1 radio frequency to the controller's frequency.
+
+![Nearby ATC](media/NearbyATC.png)

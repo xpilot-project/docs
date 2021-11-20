@@ -112,8 +112,9 @@ xPilot supports the following dot commands, which can be entered in the command 
 | `.rx com# On\|Off`| Toggles receiving on the specified com radio. For example: `.rx com1 on`
 | `.tx com#`| Enables the COM1 or COM2 radio for transmit. For example: `.tx com2`
 | `.towerview <IP-Address> <Callsign>`| Connects xPilot to a proxy server (such as provided by Euroscope) in observer mode for the purpose of creating a tower view. The IP address defaults to 127.0.0.1 (localhost) and the callsign defaults to TOWER.
-| `.ignore <Callsgin>` | Adds the specified aircraft to the ignore list. xPilot will not render an aircraft model for any aircraft on the ignore list.|
-| `.unignore <Callsign>` | Removes the specified aircraft from the ignore list.|
+| `.ignore <Callsgin>` | Adds the specified aircraft to the ignore list. xPilot will not render an aircraft model for any aircraft on the ignore list. The list is cleared when xPilot is closed. |
+| `.unignore <Callsign>` | Removes the specified aircraft from the ignore list. |
+| `.ignorelist` | Lists all the callsigns currently in the ignore list. |
 
 ## Disconnecting from VATSIM
 When you are ready to disconnect from VATSIM, click the **DISCONNECT** button on the xPilot client. The controller list will be cleared and all the aircraft in the sim will be removed. 
