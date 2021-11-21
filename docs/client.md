@@ -6,7 +6,7 @@ The xPilot client is the main user interface that is used to connect to the VATS
 
 <br/>
 
-?> **macOS** When you launch xPilot for the first time on macOS, you will be asked to allow xPilot to access the microphone. You must allow access in order to use the voice communication functionality of the client.<br/><br/>![Microphone Access](media/MacOSMicrophoneAccess.png)
+?> **macOS Users:** When you launch xPilot for the first time on macOS, you will be asked to allow xPilot to access the microphone. You must allow access in order to use the voice communication functionality of the client.<br/><br/>![Microphone Access](media/MacOSMicrophoneAccess.png)
 
 ## Settings
 
