@@ -16,6 +16,7 @@
   - [Flight Plan](client?id=flight-plan)
   - [Private Messages](client?id=private-messages)
   - [Dot Commands](client?id=dot-commands)
+  - [Running xPilot Over a Network](client?id=running-xpilot-over-a-network)
   - [Shared Cockpit/Observer Mode](client?id=shared-cockpit-observer-mode)
   - [Downloading Updates](client?id=downloading-updates)
 - [X-Plane Interface](xplane?id=xplane-interface)

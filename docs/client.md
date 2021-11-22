@@ -125,6 +125,13 @@ When you are ready to disconnect from VATSIM, click the **DISCONNECT** button on
 
 xPilot will automatically disconnect you from the network if you shut down the sim. You will also be disconnected if you switch airports or load a different flight in the sim.
 
+## Running xPilot Over a Network
+If you have a networked setup with one or more computers running your X-Plane visuals, you can configure xPilot to inject aircraft onto each of these machines. You must first run the xPilot installer on each of the machines so that the xPilot plugin is installed.
+
+In xPilot, use the command `.visualip <VisualMachine1> <VisualMachine2>...` to set the IP addresses of your visual machines. For example, `.visualip 192.168.1.50 192.168.1.60`. **You must restart xPilot after setting the visual machine IP(s) for the changes to take effect.** The machine IP addresses with be saved in the xPilot client configuration for the next time you launch xPilot. To clear the visual machine IP(s), use the command `.visualip` (without the IP addresses).
+
+Additionally, you can install the xPilot client on a separate computer from your master X-Plane instance. To configure this, open the `AppConfig.json` (see the [FAQ](faq) on where to find the configuration file) and change the `XplaneNetworkAddress` to the IP address of the machine where your master instance of X-Plane is installed. By default, it's set to 127.0.0.1 (localhost) because xPilot assumes that xPilot is installed on the same machine as your master X-Plane instance. The xPilot client must be closed before making changes to the configuration file. **<span style="color:red;">Only change this if you know what you are doing!</span>**
+
 ## Shared Cockpit (Observer) Mode
 xPilot supports the ability to connect in observer mode so that your aircraft does not appear to other users on the network. This feature is intended for use with shared cockpit operations. To use this feature, the first pilot should connect to the network normally, and the second pilot should connect in observer mode. The second pilot must use the same callsign as the first pilot, with a letter appended to the end.
 
