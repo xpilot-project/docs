@@ -24,6 +24,9 @@ If the **Automatically set transponder to Mode C on takeoff** is enabled, your a
 
 The toggle options on the right allow you to choose which events will cause the application icon in the task bar to flash when xPilot is not the active window.
 
+### Push to Talk
+Your Push to Talk button must be set within X-Plane. See the [Command Bindings](xplane?id=command-bindings) for information on how to bind your PTT.
+
 ### Audio Devices
 The Audio API will show the audio drivers available to xPilot. If you are on Windows, this dropdown will show multiple options: MME, Windows Direct Sound, Windows WASAPI and Windows WDM-KS. MME or Windows WASAPI are the most common, but another option might work better with your audio device.
 
