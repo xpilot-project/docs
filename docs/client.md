@@ -57,7 +57,11 @@ When flying on VATSIM, you will need to toggle your transponder between Standby 
 
 **Toggle Transponder Mode**: To toggle the transponder mode, you can click the **MODE C** button on the client. The button will change to a green color when Mode C is on. You can also toggle the transponder mode directly in your aircraft's transponder panel in the sim.
 
+![Mode C](media/ModeC.png)
+
 **Squawking Ident**: a controller may ask you to squawk ident. This causes your data tag to appear differently on the controller's radar scope, helping them locate you in their airspace. If you are asked to squawk ident, you can press the **IDENT** button on the client, or in your aircraft's transponder panel in the sim. The **IDENT** button will light up green when xPilot has sent the ident signal to the network. When the ident is finished, the button will return to its normal state.
+
+![Transponder Ident](media/TransponderIdent.png)
 
 ## Communicating with Controllers
 When you connect to VATSIM, all controllers in range will be displayed in the controller list along the left side of the xPilot client window, grouped by facility type. Each entry in the list will have the controller's callsign and frequency. If you hover over the callsign, a popup label will appear displaying the controller's name.
