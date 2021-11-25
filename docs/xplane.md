@@ -10,9 +10,9 @@ All xPilot Plugin settings are saved to a file named `Config.json` in the `X-Pla
 
 ![X-Plane Settings](media/XplaneSettings.png)
 
-* **Automatically Show Message Preview Panel**<br/>If this option is enabled, if a new radio text message is received, it will display in a small translucent panel at the top right of the X-Plane window.
+* **Automatically Show Notification Panel**<br/>If this option is enabled, if a new radio text message is received, it will display in a small translucent panel at the top right of the X-Plane window.
 
-* **Hide Message Preview Panel After...**<br/>This option sets how long the message preview panel should stay open (in seconds) before it automatically disappears.
+* **Hide Notification Panel After...**<br/>This option sets how long the notification panel should stay open (in seconds) before it automatically disappears.
 
 * **Enable Aircraft Labels**<br/>If this option is enabled, floating callsign labels will be placed above all aircraft in the sim.
 
@@ -66,7 +66,7 @@ Available X-Plane Commands:
 
 * **Toggle Aircraft Labels**<br/>Bind `xPilot: Toggle Aircraft Labels` command to show or hide aircraft labels.
 
-* **Toggle Message Preview Panel**<br/>Bind `xPilot: Toggle Notification Panel` command to show or hide the message preview panel.
+* **Toggle Notification Panel**<br/>Bind `xPilot: Toggle Notification Panel` command to show or hide the notification panel.
 
 * **Toggle Message Console**<br/>Bind `xPilot: Toggle Message Console` command to show or hide the text message console.
 
