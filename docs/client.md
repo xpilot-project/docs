@@ -22,7 +22,7 @@ Select a VATSIM server which you would like to connect to. You should choose a s
 
 If the **Automatically set transponder to Mode C on takeoff** is enabled, your aircraft's transponder will automatically change to Mode C after takeoff.
 
-The toggle options on the right allow you to choose which events will cause the application icon in the task bar to flash when xPilot is not the active window.
+The toggle options on the right allow you to choose which events will cause aural sound notifications. The application icon in the task bar will also flash/bounce to grab your attention if xPilot is not the active window.
 
 ### Push to Talk
 Your Push to Talk button must be set within X-Plane. See the [Command Bindings](xplane?id=command-bindings) for information on how to bind your PTT.
