@@ -7,6 +7,7 @@
 - [xPilot Client](client?id=xpilot-client)
   - [Settings](client?id=settings)
   - [Audio Devices](client?id=audio-devices)
+  - [Push to Talk](client?id=push-to-talk)
   - [Radio Effects](client?id=radio-effects)
   - [Connecting to VATSIM](client?id=connecting-to-vatsim)
   - [Controlling the Transponder](client?id=controlling-the-transponder)
