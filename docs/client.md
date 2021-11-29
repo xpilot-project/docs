@@ -36,7 +36,7 @@ The **Listen Device** is the audio device that will be used as the output device
 
 If the audio device is not yet plugged in, you will need to close and restart the xPilot client.
 
-You can also adjust the COM1 and COM2 volumes here.
+You can also adjust the COM1 and COM2 volumes here. Alternatively, you can adjust the COM1 and COM2 volumes via the volume knobs in the aircraft radio panel. **Note:** The volume sliders in the xPilot settings do not reflect adjustments made via the aircraft radio stack volume knobs, and vice versa. So, if you adjust the radio volumes inside the aircraft, the volume sliders will not reflect this change; when you restart xPilot, the volumes will revert to the previous volume levels as set by the volume sliders.
 
 ### Radio Effects
 If the **Enable HF Squelch** is enabled, you will not hear the static white noise when tuned to an HF frequency. If you want a realistic HF frequency experience, leave this option off.
