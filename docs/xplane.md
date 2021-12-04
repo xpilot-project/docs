@@ -85,7 +85,8 @@ The following dot commands are supported in the Text Message Console in X-Plane:
 | Command | Description |
 | ---------- |-------------|
 | `.chat <Callsign>` | Opens a new chat tab for the specified callsign. You can also use `.msg`
-| `.close` | Closes the current chat tab.
+| `.close` | Closes the current private message tab.
+| `.closeall` | Closes all private message tabs.
 | `.atis <Callsign>` | Requests the controller text information/ATIS for the specified callsign.
 | `.wx <Station>` | Requests the weather (METAR) for the specified station ID. You can also use `.metar`
 | `.clear`| Clears the contents of the active message tab.
