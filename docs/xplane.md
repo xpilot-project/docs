@@ -87,9 +87,10 @@ The following dot commands are supported in the Text Message Console in X-Plane:
 | `.chat <Callsign>` | Opens a new chat tab for the specified callsign. You can also use `.msg`
 | `.close` | Closes the current private message tab.
 | `.closeall` | Closes all private message tabs.
+| `.clear`| Clears the contents of the active message tab.
 | `.atis <Callsign>` | Requests the controller text information/ATIS for the specified callsign.
 | `.wx <Station>` | Requests the weather (METAR) for the specified station ID. You can also use `.metar`
-| `.clear`| Clears the contents of the active message tab.
+| `.x <Squawk-Code>` | Sets your transponder to the specified squawk code. You can also use `.xpdr`, `.xpndr` or `.squawk`
 | `.com1 <Frequency>`| Sets the COM1 radio to the specified frequency.
 | `.com2 <Frequency>`| Sets the COM2 radio to the specified frequency.
 | `.rx com# On\|Off`| Toggles receiving on the specified com radio. For example: `.rx com1 on`

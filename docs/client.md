@@ -6,7 +6,7 @@ The xPilot client is the main user interface that is used to connect to the VATS
 
 <br/>
 
-?> **macOS Users:** When you launch xPilot for the first time on macOS, you will be asked to allow xPilot to access the microphone. You must allow access in order to use the voice communication functionality of the client.<br/><br/>![Microphone Access](media/MacOSMicrophoneAccess.png)
+!> **macOS Users:** When you launch xPilot for the first time on macOS, you will be asked to allow xPilot to access the microphone. You must allow access in order to use the voice communication functionality of the client.<br/>![Microphone Access](media/MacOSMicrophoneAccess.png)
 
 ## Settings
 
@@ -24,6 +24,8 @@ If the **Automatically set transponder to Mode C on takeoff** is enabled, your a
 
 The toggle options on the right allow you to choose which events will cause aural sound notifications. The application icon in the task bar will also flash/bounce to grab your attention if xPilot is not the active window.
 
+If **Keep xPilot window visible** is checked, the xPilot client window will remain visible (on top) at all times.
+
 ### Push to Talk
 Your Push to Talk button must be set within X-Plane. See the [Command Bindings](xplane?id=command-bindings) for information on how to bind your PTT.
 
@@ -34,7 +36,9 @@ The **Microphone Device** is what will be used to communicate with VATSIM contro
 
 The **Listen Device** is the audio device that will be used as the output device for listening to voice transmissions from the controllers and other pilots.
 
-If the audio device is not yet plugged in, you will need to close and restart the xPilot client.
+!> **Windows Users**: If you cannot hear audio out of the configured Listen Device, you may need to change the playback device in your audio settings to match the Listen Device in xPilot.
+
+If the audio device is not yet plugged in, you will need to close and restart the xPilot client to refresh the device lists.
 
 You can also adjust the COM1 and COM2 volumes here. Alternatively, you can adjust the COM1 and COM2 volumes via the volume knobs in the aircraft radio panel. **Note:** The volume sliders in the xPilot settings do not reflect adjustments made via the aircraft radio stack volume knobs, and vice versa. So, if you adjust the radio volumes inside the aircraft, the volume sliders will not reflect this change; when you restart xPilot, the volumes will revert to the previous volume levels as set by the volume sliders.
 
@@ -49,6 +53,8 @@ To connect to VATSIM, click the **CONNECT** button. You will see the Connect win
 The aircraft type code is the 3-4 character ICAO identifier code for the aircraft you are flying. This will allow other users to see you in their sim as the correct aircraft type. If you are unsure of the correct identifier, you can use the [ICAO Aircraft Type Designators](https://www.icao.int/publications/doc8643/pages/search.aspx) website to look it up.
 
 Press the Connect button when you are ready to connect to the network. If the connection was successful, you will see a message in the main message area, and the Connect button will light blue and its label will change to "Disconnect". If there are controllers within range of your location, they will appear in the controller list on the left hand side of the client. 
+
+Your callsign will appear next to the **Settings** button after successfully connecting.
 
 [See below](client?id=shared-cockpit-observer-mode) for details on using the shared cockpit (observer) mode.
 
