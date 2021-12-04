@@ -50,7 +50,13 @@ If you check the box labeled **Disable Radio Effects**, the incoming voice audio
 ## Connecting to VATSIM
 To connect to VATSIM, click the **CONNECT** button. You will see the Connect window. The callsign and aircraft type code field is required. The SELCAL code is optional.
 
-The aircraft type code is the 3-4 character ICAO identifier code for the aircraft you are flying. This will allow other users to see you in their sim as the correct aircraft type. If you are unsure of the correct identifier, you can use the [ICAO Aircraft Type Designators](https://www.icao.int/publications/doc8643/pages/search.aspx) website to look it up.
+The aircraft type code is the 3-4 character ICAO identifier code for the aircraft you are flying. This will allow other users to see you in their sim as the correct aircraft type. xPilot will suggest type codes based on what you type in the type code field. You can search by ICAO code, aircraft model or manufacturer, and xPilot will present you with a list of results to choose from. 
+
+![Type Code Suggestions](media/TypeCodeSuggestions.png)
+
+If you specify an invalid aircraft type code, you will a warning message prompting you to confirm your selection. You may continue connecting using the unknown type code, however, other network users may not see your aircraft rendered correctly in their simulator.
+
+![Invalid Type Code](media/InvalidTypeCode.png)
 
 Press the Connect button when you are ready to connect to the network. If the connection was successful, you will see a message in the main message area, and the Connect button will light blue and its label will change to "Disconnect". If there are controllers within range of your location, they will appear in the controller list on the left hand side of the client. 
 
