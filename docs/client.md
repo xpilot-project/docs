@@ -24,7 +24,7 @@ If the **Automatically set transponder to Mode C on takeoff** is enabled, your a
 
 The toggle options on the right allow you to choose which events will cause aural sound notifications. The application icon in the task bar will also flash/bounce to grab your attention if xPilot is not the active window.
 
-If **Keep xPilot window visible** is checked, the xPilot client window will remain visible (on top) at all times.
+If **Keep xPilot window visible** is checked, the xPilot client window will always remain visible (on top).
 
 ### Push to Talk
 Your Push to Talk button must be set within X-Plane. See the [Command Bindings](xplane?id=command-bindings) for information on how to bind your PTT.
@@ -50,7 +50,7 @@ If you check the box labeled **Disable Radio Effects**, the incoming voice audio
 ## Connecting to VATSIM
 To connect to VATSIM, click the **CONNECT** button. You will see the Connect window. The callsign and aircraft type code field is required. The SELCAL code is optional.
 
-The aircraft type code is the 3-4 character ICAO identifier code for the aircraft you are flying. This will allow other users to see you in their sim as the correct aircraft type. xPilot will suggest type codes based on what you type in the type code field. You can search by ICAO code, aircraft model or manufacturer, and xPilot will present you with a list of results to choose from. 
+The aircraft type code is the 3 to 4 character ICAO identifier code for the aircraft you are flying. This will allow other users to see you in their sim as the correct aircraft type. xPilot will suggest type codes based on what you type in the type code field. You can search by ICAO code, aircraft model or manufacturer, and xPilot will present you with a list of results to choose from. 
 
 ![Type Code Suggestions](media/TypeCodeSuggestions.png)
 
@@ -58,7 +58,7 @@ If you specify an invalid aircraft type code, you will a warning message prompti
 
 ![Invalid Type Code](media/InvalidTypeCode.png)
 
-Press the Connect button when you are ready to connect to the network. If the connection was successful, you will see a message in the main message area, and the Connect button will light blue and its label will change to "Disconnect". If there are controllers within range of your location, they will appear in the controller list on the left hand side of the client. 
+Press the Connect button when you are ready to connect to the network. If the connection was successful, you will see a message in the main message area, and the Connect button will light blue and its label will change to "Disconnect". If there are controllers within range of your location, they will appear in the controller list on the left-hand side of the client. 
 
 Your callsign will appear next to the **Settings** button after successfully connecting.
 
@@ -90,7 +90,7 @@ Incoming text radio messages are shown in the main messages area. If you are lis
 
 If an incoming text radio message is directed at you specifically, an alert sound will play out of your computer's default audio device, and the message will appear in a cyan (light blue) color. Text radio messages directed towards other pilots (or towards no one in particular) will appear in a gray color.
 
-**Your aircraft's avionics must be powered on in order for the COM radios to work. If your avionics are not powered, the TX and RX indicators will be grayed out for both COM radios (see screenshot below) and you will not be able to receive or transmit**
+**Your aircraft's avionics must be powered on for the COM radios to work. If your avionics are not powered, the TX and RX indicators will be grayed out for both COM radios (see screenshot below) and you will not be able to receive or transmit**
 
 ![Radios No Power](media/RadiosNoPower.png)
 
