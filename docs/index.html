@@ -97,7 +97,6 @@
             themeColor: '#0164AD',
             coverpage: '_coverpage.html',
             loadSidebar: true,
-            ga: 'G-L4X8XT3GXW',
             plugins: [
                 overrideTitle({
                     title: 'xPilot for VATSIM'
@@ -119,7 +118,16 @@
         }
     </script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4X8XT3GXW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-L4X8XT3GXW');
+    </script>
 </body>
 
 </html>
