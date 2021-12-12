@@ -14,19 +14,13 @@ All xPilot Plugin settings are saved to a file named `Config.json` in the `X-Pla
 
 * **Hide Notification Panel After...**<br/>This option sets how long the notification panel should stay open (in seconds) before it automatically disappears.
 
-* **Enable Aircraft Labels**<br/>If this option is enabled, floating callsign labels will be placed above all aircraft in the sim.
+* **Show Callsign Labels**<br/>If this option is enabled, floating callsign labels will be placed above all aircraft in the sim.
 
-* **Aircraft Label Color**<br/>You can set a custom or pre-defined aircraft label color (if the aircraft labels are enabled). There are four pre-defined colors: yellow, red, green and cyan. You can alternatively pick your own color by clicking the color square to the left of *Or Choose Color*.
+* **Callsign Label Color**<br/>You can set a custom or pre-defined aircraft label color (if the callsign labels are enabled). There are four pre-defined colors: yellow, red, green and cyan. You can alternatively pick your own color by clicking the color square to the left of *Or Choose Color*.
 
-* **Max Label Distance**<br/>This option sets how far away you can see aircraft labels (1-nautical miles to 10-nautical miles).
+* **Max Callsign Label Distance**<br/>This option sets how far away you can see aircraft labels (1-nautical miles to 10-nautical miles).
 
-* **Hide Labels at Visibility Distance**<br/>If this option is enabled, aircraft labels will not be sown if the plane is beyond the current visibility range. If left unchecked, aircraft labels will show regardless of the current visibility conditions (i.e., if a plane is hidden in fog or behind clouds, the label will still show).
-
-* **Log.txt Log Level**<br/>This option limits how much information is written to the X-Plane log.txt file. **Debug** will write the most information, whereas **Fatal** will write the least amount of information. It is recommended that you only change this if you experience odd behavior and need to log additional information for support requests.
-
-* **Log Model Matching Results**<br/>If this option is enabled, debug information will be logged to the X-Plane log.txt file about how a CSL model was chosen. You should only enable this option if you need to determine why planes aren't rendering as expected.
-
-* **Override "Contact ATC" Command**<br/>If this option is enabled, xPilot will ignore the "Contact ATC" X-Plane command. This is generally only useful for users who also fly on PilotEdge.
+* **Hide Callsign Labels at Visibility Distance**<br/>If this option is enabled, aircraft labels will not be sown if the plane is beyond the current visibility range. If left unchecked, aircraft labels will show regardless of the current visibility conditions (i.e., if a plane is hidden in fog or behind clouds, the label will still show).
 
 * **Default Aircraft Type ICAO**<br/>The fallback aircraft ICAO type designator that is used if no appropriate CSL model can be found for a plane. The plane will instead be rendered as this aircraft type as opposed to not rendering at all.
 
@@ -50,6 +44,16 @@ If you see this error, make sure you have a CSL model package installed (such as
 
 **<span style="color:red;">Any time you make changes to the CSL configuration you must restart X-Plane for the changes to take effect.</span>**
 
+## Advanced Options
+
+![Advanced Options](media/XplaneAdvancedSettings.png)
+
+* **Override "Contact ATC" Command**<br/>If this option is enabled, xPilot will ignore the "Contact ATC" X-Plane command. This is generally only useful for users who also fly on PilotEdge.
+
+* **Log.txt Log Level**<br/>This option limits how much information is written to the X-Plane log.txt file. **Debug** will write the most information, whereas **Fatal** will write the least amount of information. It is recommended that you only change this if you experience odd behavior and need to log additional information for support requests.
+
+* **Log Model Matching Results**<br/>If this option is enabled, debug information will be logged to the X-Plane log.txt file about how a CSL model was chosen. You should only enable this option if you need to determine why planes aren't rendering as expected.
+
 ## Command Bindings
 
 There are several commands that can be binded to one or more keyboard keys, joystick buttons or switches within X-Plane. If you are not familiar with how to setup command shortcuts in X-Plane, please refer to the [X-Plane 11 Manual](https://www.x-plane.com/manuals/desktop/index.html#configuringkeyboardshortcuts) for more information.
@@ -68,13 +72,15 @@ Available X-Plane Commands:
 
 * **Toggle Notification Panel**<br/>Bind `xPilot: Toggle Notification Panel` command to show or hide the notification panel.
 
-* **Toggle Message Console**<br/>Bind `xPilot: Toggle Message Console` command to show or hide the text message console.
+* **Toggle Message Console**<br/>Bind `xPilot: Toggle Message Console` command to show or hide the text message console. [See the note](xplane?id=text-message-console) on Keyboard Key Bindings for limitations.
 
 * **Toggle TCAS Control**<br/>Bind `xPilot: Toggle TCAS Control` command to request or release TCAS control. If another plugin already owns the TCAS targets and doesn't release them on request, xPilot will not have control.
 
 ## Text Message Console
 
-In addition to using the xPilot Client interface to send or receive text radio messages or private messages, you can use the Text Message Console in X-Plane. You can open the Text Message Console through the X-Plane menu via `Plugins > xPilot > Text Message Console` or by binding a keyboard key or joystick button or switch to quickly toggle the visibility of the window. See the [Command Bindings](xplane?id=command-bindings) section for details.
+In addition to using the xPilot Client interface to send or receive text radio messages or private messages, you can use the Text Message Console in X-Plane. You can open the Text Message Console through the X-Plane menu via `Plugins > xPilot > Text Message Console` or by binding a keyboard key or joystick button or switch to quickly toggle the visibility of the window. See the [Command Bindings](xplane?id=command-bindings) section for details. 
+
+**<span style="color:red;">Keyboard Key Binding: If you bind a keyboard key to open and close the Text Message Console window, you will not be able to toggle the window closed because the text input box has priority to capture any text that is typed. Instead, you will have to manually close the window. If you bind a joystick button to toggle the window, it should work as expected.</span>**
 
 ![Text Message Console](media/TextMessageConsole.png)
 
@@ -96,7 +102,7 @@ The following dot commands are supported in the Text Message Console in X-Plane:
 | `.rx com# On\|Off`| Toggles receiving on the specified com radio. For example: `.rx com1 on`
 | `.tx com#`| Enables the COM1 or COM2 radio for transmit. For example: `.tx com2`|
 
-Private messages will appear in a separate tab in the Text Message Console window. To close a tab, hover over the tab and click the blue "X" icon that appears. To initiate a new private message, type the command `.chat CALLSIGN` (where CALLSIGN is the callsign of the user you want to send a message to) and press enter. A new tab will open titled with the callsign you specified. Type your message in the message composition area at the bottom of the tab and press enter on your keyboard to send the message.
+Private messages will appear in a separate tab in the Text Message Console window. To close a tab, click the blue "X". To initiate a new private message, type the command `.chat CALLSIGN` (where CALLSIGN is the callsign of the user you want to send a message to) and press enter. A new tab will open titled with the callsign you specified. Type your message in the message composition area at the bottom of the tab and press enter on your keyboard to send the message.
 
 ![Private Message](media/TextMessageConsole_PrivateMessage.png)
 
