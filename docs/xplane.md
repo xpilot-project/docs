@@ -60,6 +60,8 @@ There are several commands that can be binded to one or more keyboard keys, joys
 
 **<span style="color:red;">At minimum, you must configure the Radio Push to Talk (PTT) command binding in order to communicate with controllers via voice on the network.</span>**
 
+**<span style="color:red;">Keyboard PTT Binding: If you set your PTT to a keyboard key, X-Plane must be the only active/focused window for the PTT keypress to be captured (i.e. xPilot cannot be visible on the same screen as X-Plane). If you have a joystick device, it is recommended that you bind your PTT to one of the joystick buttons instead; this will alleviate the issue with X-Plane not properly detecting when your PTT is pressed.</span>**
+
 Available X-Plane Commands:
 
 * **Radio Push to Talk (PTT)**<br/>Bind `xPilot: Radio Push-To-Talk (PTT)` command to transmit on a radio frequency while connected to the network.
