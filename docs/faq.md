@@ -20,8 +20,8 @@ Make sure your radio stack in the aircraft is properly configured for TX and RX.
 * **xPilot doesn't connect to X-Plane - stuck on "Waiting for X-Plane Connection"**<br/>
 Ensure that X-Plane is running and that it is not blocked by your Firewall. See [Allowing X-Plane through your firewall](https://www.x-plane.com/kb/allowing-x-plane-through-your-firewall/).<br/><br/>The **Port we receive on (legacy)** in X-Plane must also be set to `49000`; this can be found in `X-Plane Settings > Network`. Also verify that the switch at the bottom of the Network tab is set to **Allow incoming connections**. Restart X-Plane after making these changes.<br/><br/>![X-Plane Network Settings](media/XplaneNetworkSettings.png)
 
-* **Error connecting to voice server: Connect failed (Forbidden -)**<br/>
-If you recently created or reactivated your VATSIM account, you will need to wait a few minutes for your account to synchronize; and in some cases, up to 24-hours. Until your account is synchronized, you will not be able to use voice &mdash; only text.
+* **Error connecting to voice server. Please check your VATSIM credentials and try again.**<br/>
+If you recently created or reactivated your VATSIM account, you will need to wait a few minutes for your account to synchronize with the servers; and in some cases, up to 24-hours. Until your account is synchronized, you will not be able to use voice &mdash; only text. You must also take and pass the "P0: Basic VATSIM Member" exam. Otherwise, check your credentials and try again; the password is case sensitive.
 
 * **macOS: Error reading file...**<br/>
 Due to macOS security settings, if you receive a "Error reading file..." error when updating xPilot, click the folder icon, choose the X-Plane folder path and try again.<br/>![Error Reading File](media/MacOSErrorReadingFile.png)
