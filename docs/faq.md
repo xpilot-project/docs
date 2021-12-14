@@ -22,3 +22,6 @@ Ensure that X-Plane is running and that it is not blocked by your Firewall. See 
 
 * **Error connecting to voice server: Connect failed (Forbidden -)**<br/>
 If you recently created or reactivated your VATSIM account, you will need to wait a few minutes for your account to synchronize; and in some cases, up to 24-hours. Until your account is synchronized, you will not be able to use voice &mdash; only text.
+
+* **macOS: Error reading file...**<br/>
+Due to macOS security settings, if you receive a "Error reading file..." error when updating xPilot, click the folder icon, choose the X-Plane folder path and try again.<br/>![Error Reading File](media/MacOSErrorReadingFile.png)
