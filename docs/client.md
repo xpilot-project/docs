@@ -36,8 +36,6 @@ The **Microphone Device** is what will be used to communicate with VATSIM contro
 
 The **Listen Device** is the audio device that will be used as the output device for listening to voice transmissions from the controllers and other pilots.
 
-!> **Windows Users**: If you cannot hear audio out of the configured Listen Device, you may need to change the playback device in your audio settings to match the Listen Device in xPilot.
-
 If the audio device is not yet plugged in, you will need to close and restart the xPilot client to refresh the device lists.
 
 You can also adjust the COM1 and COM2 volumes here. Alternatively, you can adjust the COM1 and COM2 volumes via the volume knobs in the aircraft radio panel. **Note:** The volume sliders in the xPilot settings do not reflect adjustments made via the aircraft radio stack volume knobs, and vice versa. So, if you adjust the radio volumes inside the aircraft, the volume sliders will not reflect this change; when you restart xPilot, the volumes will revert to the previous volume levels as set by the volume sliders.
