@@ -2,17 +2,17 @@
 
 The xPilot client is the main user interface that is used to connect to the VATSIM network.
 
-![xPilot](media/Client.png)
+![xPilot](media/Client.png ':size=870x274')
 
 <br/>
 
-!> **macOS Users:** When you launch xPilot for the first time on macOS, you will be asked to allow xPilot to access the microphone. You must allow access in order to use the voice communication functionality of the client.<br/>![Microphone Access](media/MacOSMicrophoneAccess.png)
+!> **macOS Users:** When you launch xPilot for the first time on macOS, you will be asked to allow xPilot to access the microphone. You must allow access in order to use the voice communication functionality of the client.<br/>![Microphone Access](media/MacOSMicrophoneAccess.png ':size=500x186')
 
 ## Settings
 
 To configure the xPilot client, click the **Settings** button. You will see the screen shown below.
 
-![Settings](media/Settings.png)
+![Settings](media/Settings.png ':size=692x662')
 
 Before you can connect to the network, you must configure your VATSIM credentials. If you wish to utilize voice communications, you must also configure your microphone and listen device.
 
@@ -52,11 +52,11 @@ To connect to VATSIM, click the **CONNECT** button. You will see the Connect win
 
 The aircraft type code is the 3 to 4 character ICAO identifier code for the aircraft you are flying. This will allow other users to see you in their sim as the correct aircraft type. xPilot will suggest type codes based on what you type in the type code field. You can search by ICAO code, aircraft model or manufacturer, and xPilot will present you with a list of results to choose from. 
 
-![Type Code Suggestions](media/TypeCodeSuggestions.png)
+![Type Code Suggestions](media/TypeCodeSuggestions.png ':size=870x250')
 
 If you specify an invalid aircraft type code, you will a warning message prompting you to confirm your selection. You may continue connecting using the unknown type code, however, other network users may not see your aircraft rendered correctly in their simulator.
 
-![Invalid Type Code](media/InvalidTypeCode.png)
+![Invalid Type Code](media/InvalidTypeCode.png ':size=870x250')
 
 Press the Connect button when you are ready to connect to the network. If the connection was successful, you will see a message in the main message area, and the Connect button will light blue and its label will change to "Disconnect". If there are controllers within range of your location, they will appear in the controller list on the left-hand side of the client. 
 
@@ -69,11 +69,11 @@ When flying on VATSIM, you will need to toggle your transponder between Standby 
 
 **Toggle Transponder Mode**: To toggle the transponder mode, you can click the **MODE C** button on the client. The button will change to a green color when Mode C is on. You can also toggle the transponder mode directly in your aircraft's transponder panel in the sim.
 
-![Mode C](media/ModeC.png)
+![Mode C](media/ModeC.png ':size=617x70')
 
 **Squawking Ident**: a controller may ask you to squawk ident. This causes your data tag to appear differently on the controller's radar scope, helping them locate you in their airspace. If you are asked to squawk ident, you can press the **IDENT** button on the client, or in your aircraft's transponder panel in the sim. The **IDENT** button will light up green when xPilot has sent the ident signal to the network. When the ident is finished, the button will return to its normal state.
 
-![Transponder Ident](media/TransponderIdent.png)
+![Transponder Ident](media/TransponderIdent.png ':size=619x74')
 
 ## Communicating with Controllers
 When you connect to VATSIM, all controllers in range will be displayed in the controller list along the left side of the xPilot client window, grouped by facility type. Each entry in the list will have the controller's callsign and frequency. If you hover over the callsign, a popup label will appear displaying the controller's name.
@@ -82,7 +82,7 @@ In order to communicate with a controller, simply tune the controller's frequenc
 
 In the example below, COM1 is enabled for transmit and receive, as indicated by the white TX/RX indicators. COM2 transmit and receive is turned off.
 
-![Radio Panel](media/RadioPanel.png)
+![Radio Panel](media/RadioPanel.png ':size=251x76')
 
 To communicate with a controller via text radio messages, ensure you have the main "Messages" tab selected, type in your message in the text command line at the bottom of the message area and press Enter on your keyboard to send the message. xPilot will send the text message out as a text radio message on whichever COM frequency you have selected for transmit.
 
@@ -92,7 +92,7 @@ If an incoming text radio message is directed at you specifically, an alert soun
 
 **Your aircraft's avionics must be powered on for the COM radios to work. If your avionics are not powered, the TX and RX indicators will be grayed out for both COM radios (see screenshot below) and you will not be able to receive or transmit**
 
-![Radios No Power](media/RadiosNoPower.png)
+![Radios No Power](media/RadiosNoPower.png ':size=249x74')
 
 !> If xPilot is having trouble syncing your radio transmit and receive status, you can force xPilot to transmit and/or receive on a specific radio instead.<br/><br/>To force xPilot to receive on a specific COM radio, use the `.rx` dot command. For example, to force receiving on COM1, you would enter `.rx com1 on` in the command line and press enter.<br/><br/>To force xPilot to transmit on a specific COM radio, use the `.tx` dot command. For example to force transmitting on COM2, you would type `.tx com2` in the command line and press enter.<br/><br/>See the [Dot Commands](client?id=dot-commands) section for more information.
 
@@ -160,7 +160,7 @@ For example, if the first pilot’s callsign is `JBU123`, the second pilot shoul
 ## Downloading Updates
 Each time you launch xPilot, it will check if there is a new version available. If there is a new version available, you will be prompted to download and install it.
 
-![New Version](media/NewVersionAvailable.png)
+![New Version](media/NewVersionAvailable.png ':size=800x250')
 
 If you click **No**, you will be prompted again the next time you open xPilot.
 
@@ -168,4 +168,4 @@ Clicking **Yes** will begin the download process. Once the download completes xP
 
 **<span style="color:red;">You must close X-Plane before installing the update, otherwise, the xPilot plugin cannot be updated properly.</span>**
 
-![New Version Downloading](media/NewVersionDownloading.png)
+![New Version Downloading](media/NewVersionDownloading.png ':size=800x250')
