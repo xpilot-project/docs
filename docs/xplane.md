@@ -8,7 +8,7 @@ The xPilot plugins settings can be accessed through the X-Plane menu: `Plugins >
 
 All xPilot Plugin settings are saved to a file named `Config.json` in the `X-Plane 11/Resources/plugins/xPilot/Resources` folder.
 
-![X-Plane Settings](media/XplaneSettings.png ':size=634x368')
+![X-Plane Settings](media/XplaneSettings.png ':size=636x386')
 
 * **Automatically Show Notification Panel**<br/>If this option is enabled, if a new radio text message is received, it will display in a small translucent panel at the top right of the X-Plane window.
 
