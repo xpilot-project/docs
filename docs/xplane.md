@@ -24,6 +24,10 @@ All xPilot Plugin settings are saved to a file named `Config.json` in the `X-Pla
 
 * **Default Aircraft Type ICAO**<br/>The fallback aircraft ICAO type designator that is used if no appropriate CSL model can be found for a plane. The plane will instead be rendered as this aircraft type as opposed to not rendering at all.
 
+* **Enable Transmit Indicator**<br/>Enable this option to see a green transmit indicator at the top left corner of your X-Plane window when you press your Push to Talk.
+
+* **Enable Aircraft Engine Sounds**<br/>Enable this option to add ambient engine sounds to other aircraft.
+
 ## CSL Configuration
 
 xPilot has no complex or special model matching rule sets that need to be installed or configured. You must have at least one CSL model set package installed before you can use xPilot. The most popular model set is Bluebell CSL. When you first install xPilot, you will be prompted to install a CSL model set.
