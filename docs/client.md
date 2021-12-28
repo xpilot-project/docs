@@ -117,7 +117,7 @@ You can initiate a private chat session by right-clicking on a controller in the
 You can also initate a private chat session by using the `.chat` dot command. Refer to the section on [Dot Commands](client?id=dot-commands) for details.
 
 ## Dot Commands
-xPilot supports the following dot commands, which can be entered in the command line just below the main message area.
+xPilot supports the following dot commands, which can be entered in the command line just below the message history in any tab.
 
 | <div style="width:300px;">Command</div> | Description |
 | ---------- |-------------|
