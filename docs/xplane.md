@@ -34,7 +34,7 @@ xPilot has no complex or special model matching rule sets that need to be instal
 
 In the xPilot Plugin settings (accessed via `Plugins > xPilot > Settings`), there is a section to define the path(s) to where your CSL model sets are installed. You can define up to seven different paths.
 
-![CSL Configuration](media/XplaneCSLConfiguration.png ':size=634')
+![CSL Configuration](media/XplaneCSLConfiguration.png ':size=632')
 
 To define a new path, click the `Browse` button and browse to the root folder of your CS models, or manually type in the full path. If there are multiple subfolders, xPilot will search the folders for additional models.
 
@@ -121,6 +121,6 @@ All notifications (text radio messages, private messages, network broadcast aler
 
 ## Nearby ATC
 
-The Nearby ATC window shows controllers who are within range; the list includes the callsign, name and frequency of the station. There are two action buttons available. The first button will request the station information (controller ATIS) and the second button will tune your COM1 radio frequency to the controller's frequency.
+The Nearby ATC window shows controllers who are within range, organized by facility type; the list includes the callsign, frequency and person's name of the station. There are two action buttons available. The first button will request the station information (controller ATIS) and the second button will tune your COM1 radio frequency to the controller's frequency.
 
-![Nearby ATC](media/NearbyATC.png ':size=576')
+![Nearby ATC](media/NearbyATC.png ':size=579')

@@ -12,7 +12,7 @@ The xPilot client is the main user interface that is used to connect to the VATS
 
 To configure the xPilot client, click the **Settings** button. You will see the screen shown below.
 
-![Settings](media/Settings.png ':size=692')
+![Settings](media/Settings.png ':size=672')
 
 Before you can connect to the network, you must configure your VATSIM credentials. If you wish to utilize voice communications, you must also configure your microphone and listen device.
 
@@ -32,7 +32,7 @@ Your Push to Talk button must be set within X-Plane. See the [Command Bindings](
 ### Audio Devices
 The Audio API will show the audio drivers available to xPilot. If you are on Windows, this dropdown will show multiple options: MME, Windows Direct Sound, Windows WASAPI and Windows WDM-KS. MME or Windows WASAPI are the most common, but another option might work better with your audio device.
 
-The **Microphone Device** is what will be used to communicate with VATSIM controllers. If the microphone device is working, you should see the calibration meter below the selection box move and change colors when you talk. You may need to adjust the input volume of your microphone device in your system settings; the ideal range is for the meter to be green when you speak in a normal volume.
+The **Microphone Device** is what will be used to communicate with VATSIM controllers. xPilot employs automatic gain control to automatically increase the gain of your microphone input volume. In some circumstances, you may need to manually increase the input volume of your microphone device in your system settings if it is too low.
 
 The **Listen Device** is the audio device that will be used as the output device for listening to voice transmissions from the controllers and other pilots.
 
@@ -40,10 +40,12 @@ If the audio device is not yet plugged in, you will need to close and restart th
 
 You can also adjust the COM1 and COM2 volumes here. Alternatively, you can adjust the COM1 and COM2 volumes via the volume knobs in the aircraft radio panel. **Note:** The volume sliders in the xPilot settings do not reflect adjustments made via the aircraft radio stack volume knobs, and vice versa. So, if you adjust the radio volumes inside the aircraft, the volume sliders will not reflect this change; when you restart xPilot, the volumes will revert to the previous volume levels as set by the volume sliders.
 
+If the **Allow aircraft radio stack volume knobs to control radio volume** is checked, the radio volume can be controlled using the volume knobs in your aircraft. This will work as long as the aircraft your flying uses the standard volume dataref; some aircraft developers use custom datarefs.
+
 ### Radio Effects
 If the **Enable HF Squelch** is enabled, you will not hear the static white noise when tuned to an HF frequency. If you want a realistic HF frequency experience, leave this option off.
 
-If you check the box labeled **Disable Radio Effects**, the incoming voice audio will not be filtered to sound like a VHF radio. Generally, you want to leave this option unchecked so that the audio is realistic.
+If you check the box labeled **Disable Radio Effects**, the incoming voice audio will not be filtered to sound like a VHF radio &mdash; it'll sound more like a VOIP call. Generally, you want to leave this option unchecked so that the audio sounds realistic.
 
 ## Connecting to VATSIM
 To connect to VATSIM, click the **CONNECT** button. You will see the Connect window. The callsign and aircraft type code field is required. The SELCAL code is optional.
