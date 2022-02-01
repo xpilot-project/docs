@@ -18,7 +18,10 @@ This is typically caused by a poor connection between you and the network server
 Make sure your radio stack in the aircraft is properly configured for TX and RX. In some cases, the aircraft model may not have a working audio panel, in which case you can trick xPilot into enabling TX and/or RX via the `.tx` and/or `.rx` dot commands. See the [Dot Commands](client?id=dot-commands) section for details.
 
 ## xPilot doesn't connect to X-Plane - stuck on "Waiting for X-Plane Connection"
-Ensure that X-Plane is running and that it is not blocked by your Firewall. See [Allowing X-Plane through your firewall](https://www.x-plane.com/kb/allowing-x-plane-through-your-firewall/).<br/><br/>The **Port we receive on (legacy)** in X-Plane must also be set to **49000** under **X-Plane Settings > Network**. Also, verify that the switch at the bottom of the Network tab is set to **Allow incoming connections**. Restart X-Plane after making these changes.<br/><br/>![X-Plane Network Settings](media/XplaneNetworkSettings.png ':size=1280')
+* Verify xPilot has an entry in X-Plane's plugin menu. If this is not the case, make sure there is an xPilot plugin in `X-Plane 11/Resources/plugins/xPilot`.
+* Ensure that X-Plane is running with a flight open and that it is not blocked by your Firewall. See [Allowing X-Plane through your firewall](https://www.x-plane.com/kb/allowing-x-plane-through-your-firewall/).<br/><br/>
+The **Port we receive on (legacy)** in X-Plane must also be set to **49000** under **X-Plane Settings > Network**. Also, verify that the switch at the bottom of the Network tab is set to **Allow incoming connections**. Restart X-Plane after making these changes.![X-Plane Network Settings](media/XplaneNetworkSettings.png ':size=1280')
+* Restart your computer.
 
 ## Error connecting to voice server. Please check your VATSIM credentials and try again.
 If you recently created or reactivated your VATSIM account, you will need to wait a few minutes for your account to synchronize with the servers; and in some cases, up to 24-hours. Until your account is synchronized, you will not be able to use voice &mdash; only text. You must also take and pass the "P0: Basic VATSIM Member" exam. Otherwise, check your credentials and try again; the password is case sensitive.
