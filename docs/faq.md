@@ -3,7 +3,7 @@
 ## Where is the xPilot client config file?
 * Windows: `C:/Users/<USER>/AppData/Local/org.vatsim.xpilot/AppConfig.json`
 * macOS: `~/Library/Application Support/org.vatsim.xpilot/AppConfig.json`
-* Linux: `~/.local/storage/org.vatsim.xpilot/AppConfig.json` (you will have to enable hidden files/folders to see the `.local` folder)
+* Linux: `~/.local/share/org.vatsim.xpilot/AppConfig.json` (you will have to enable hidden files/folders to see the `.local` folder)
 
 ## Disconnected due to low frame rates
 VATSIM requires that the X-Plane users maintain at least 20 frames-per-second during flight. The reason for this is to prevent a phenomena called "time dilation", which is when the simulation rate of X-Plane drops below real-time, which results in an aircraft flying slower on radar than what their groundspeed reports. X-Plane enforces a strict 20 FPS minimum to ensure the simulation rate runs in real-time. You can read more about this here: https://www.x-plane.com/kb/the-simulators-measurement-of-time-is-slow/
