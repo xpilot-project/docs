@@ -5,7 +5,7 @@
 Download installation files respective for your computer's operating system from the [xPilot Release Page](https://github.com/xpilot-project/xpilot/releases/latest). The following screenshots are from Windows; however, the installation process will be the same for macOS and Linux.
 
 !> If you're using Microsoft Edge, you may encounter a warning when trying to download the release file. Hover over the warning, click the three dots **(...)**, then click **Keep**.<br/><br/>
-![Microsoft Edge Warning](media/EdgeWarning.png ':size=291 :class=img-border')<br/><br/>
+![Microsoft Edge Warning](media/EdgeWarning.png ':size=290 :class=img-border')<br/><br/>
 A second window will pop up, click **Show more**<br/><br/>
 ![Microsoft Edge Warning](media/EdgeWarning2.png ':size=518 :class=img-border')<br/><br/>
 Then click **Keep anyway**<br/><br/>
@@ -13,7 +13,7 @@ Then click **Keep anyway**<br/><br/>
 
 ?> If you're on Windows, you may encounter a Windows Defender SmartScreen speedbump when trying to launch the installer. Simply click the **More info** link then click the **Run anyway** button.
 
-![Windows Defender Speedbump](media/WindowsDefender.png ':size=500 :class=img-border')
+![Windows Defender Speedbump](media/WindowsDefender.png ':size=498 :class=img-border')
 
 ### xPilot Client Install Directory
 
