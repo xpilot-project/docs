@@ -23,6 +23,7 @@
 - [X-Plane Interface](xplane?id=xplane-interface)
   - [Settings](xplane?id=settings)
   - [CSL Configuration](xplane?id=csl-configuration)
+  - [How to Assign PTT](xplane?id=how-to-assign-ptt)
   - [Command Bindings](xplane?id=command-bindings)
   - [Text Message Console](xplane?id=text-message-console)
   - [Notification Panel](xplane?id=notification-panel)

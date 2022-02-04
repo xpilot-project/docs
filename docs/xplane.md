@@ -58,13 +58,38 @@ If you see this error, make sure you have a CSL model package installed (such as
 
 * **Log Model Matching Results**<br/>If this option is enabled, debug information will be logged to the X-Plane log.txt file about how a CSL model was chosen. You should only enable this option if you need to determine why planes aren't rendering as expected.
 
+## How to Assign PTT
+You must configure a Radio Push to Talk (PTT) command binding to communicate with controllers via voice on the network. You can either bind the PTT using a joystick button (recommended) or assign a keyboard key. 
+
+**<span style="color:red;">If you set your PTT to a keyboard key, X-Plane must be the only active and focused window for the PTT keypress to be captured. This means that xPilot (or any other window, like a web browser) cannot be visible and active at the same time. To ensure that X-Plane has focus, mouse click into the X-Plane simulator window to make the window active. X-Plane also limits what keys you can bind to. You cannot bind system modifier keys, like CTRL, ALT, SHIFT, etc.</span>**
+
+To bind your PTT, open the X-Plane settings menu.
+
+![X-Plane Settings Menu](media/XplaneSettingsMenuLink.png ':size=1280')
+
+Then click either "Joystick" or "Keyboard", depending on how you want to bind your PTT.
+
+![X-Plane Menu](media/XplaneMenu.png ':size=1280')
+
+### Bind Joystick Button
+
+To assign the PTT to a joystick button, double-click the labeled button you want to use on the device diagram (or find it in the list and click edit). 
+
+![X-Plane Menu](media/FindJoystickButton.png ':size=1280')
+
+In the search bar type "xPilot" and find **xPilot: Radio Push-to-Talk (PTT)**, select it and click the Apply button. The binding is now complete.
+
+![X-Plane Menu](media/AssignJoystickButton.png ':size=1280')
+
+### Bind Keyboard Key
+
+Open the "Keyboard" menu in the X-Plane settings. In the search bar, type in "xPilot" and find **xPilot: Radio Push-to-Talk (PTT)** in the search results. Click the (+) button and press a keyboard key. **<span style="color:red;">You cannot use modifier keys, like CTRL, SHIFT, ALT, etc.</span>** After you've set the keyboard key, click the Done button. The binding is now complete.
+
+![X-Plane Menu](media/AssignKeyboardKeyPtt.png ':size=1280')
+
 ## Command Bindings
 
 There are several commands that can be binded to one or more keyboard keys, joystick buttons or switches within X-Plane. If you are not familiar with how to setup command shortcuts in X-Plane, please refer to the [X-Plane 11 Manual](https://www.x-plane.com/manuals/desktop/index.html#configuringkeyboardshortcuts) for more information.
-
-**<span style="color:red;">At minimum, you must configure the Radio Push to Talk (PTT) command binding in order to communicate with controllers via voice on the network.</span>**
-
-**<span style="color:red;">Keyboard PTT Binding: If you set your PTT to a keyboard key, X-Plane must be the only active/focused window for the PTT keypress to be captured (i.e. xPilot cannot be visible on the same screen as X-Plane). If you have a joystick device, it is recommended that you bind your PTT to one of the joystick buttons instead; this will alleviate the issue with X-Plane not properly detecting when your PTT is pressed.</span>**
 
 Available X-Plane Commands:
 
