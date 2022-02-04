@@ -8,7 +8,7 @@ The xPilot plugins settings can be accessed through the X-Plane menu: `Plugins >
 
 All xPilot Plugin settings are saved to a file named `Config.json` in the `X-Plane 11/Resources/plugins/xPilot/Resources` folder.
 
-![X-Plane Settings](media/XplaneSettings.png ':size=636')
+![X-Plane Settings](media/XplaneSettings.png ':size=386')
 
 * **Automatically Show Notification Panel**<br/>If this option is enabled, if a new radio text message is received, it will display in a small translucent panel at the top right of the X-Plane window.
 
@@ -34,7 +34,7 @@ xPilot has no complex or special model matching rule sets that need to be instal
 
 In the xPilot Plugin settings (accessed via `Plugins > xPilot > Settings`), there is a section to define the path(s) to where your CSL model sets are installed. You can define up to seven different paths.
 
-![CSL Configuration](media/XplaneCSLConfiguration.png ':size=632')
+![CSL Configuration](media/XplaneCSLConfiguration.png ':size=368')
 
 To define a new path, click the `Browse` button and browse to the root folder of your CS models, or manually type in the full path. If there are multiple subfolders, xPilot will search the folders for additional models.
 
@@ -42,7 +42,7 @@ You can disable a path from being loaded when you start X-Plane by unchecking th
 
 Each time you load the xPilot client, it will verify that you have CSL models installed and properly configured. If no models are found, or the path is invalid or not enabled, the Connect button will become disabled and a red error message will be presented in the main message area:
 
-![Client CSL Error](media/ClientCSLError.png ':size=870')
+![Client CSL Error](media/ClientCSLError.png ':size=282')
 
 If you see this error, make sure you have a CSL model package installed (such as Bluebell CSL Models) and that the path is properly configured in the xPilot plugin settings. Restart xPilot and X-Plane after making the corrective changes.
 
@@ -50,7 +50,7 @@ If you see this error, make sure you have a CSL model package installed (such as
 
 ## Advanced Options
 
-![Advanced Options](media/XplaneAdvancedSettings.png ':size=635')
+![Advanced Options](media/XplaneAdvancedSettings.png ':size=368')
 
 * **Override "Contact ATC" Command**<br/>If this option is enabled, xPilot will ignore the "Contact ATC" X-Plane command. This is generally only useful for users who also fly on PilotEdge.
 
@@ -65,27 +65,27 @@ You must configure a Radio Push to Talk (PTT) command binding to communicate wit
 
 To bind your PTT, open the X-Plane settings menu.
 
-![X-Plane Settings Menu](media/XplaneSettingsMenuLink.png ':size=1280')
+![X-Plane Settings Menu](media/XplaneSettingsMenuLink.png ':size=450')
 
 Then click either "Joystick" or "Keyboard", depending on how you want to bind your PTT.
 
-![X-Plane Menu](media/XplaneMenu.png ':size=1280')
+![X-Plane Menu](media/XplaneMenu.png ':size=570')
 
 ### Bind Joystick Button
 
 To assign the PTT to a joystick button, double-click the labeled button you want to use on the device diagram (or find it in the list and click edit). 
 
-![X-Plane Menu](media/FindJoystickButton.png ':size=1280')
+![X-Plane Menu](media/FindJoystickButton.png ':size=641')
 
 In the search bar type "xPilot" and find **xPilot: Radio Push-to-Talk (PTT)**, select it and click the Apply button. The binding is now complete.
 
-![X-Plane Menu](media/AssignJoystickButton.png ':size=1280')
+![X-Plane Menu](media/AssignJoystickButton.png ':size=641')
 
 ### Bind Keyboard Key
 
 Open the "Keyboard" menu in the X-Plane settings. In the search bar, type in "xPilot" and find **xPilot: Radio Push-to-Talk (PTT)** in the search results. Click the (+) button and press a keyboard key. **<span style="color:red;">You cannot use modifier keys, like CTRL, SHIFT, ALT, etc.</span>** After you've set the keyboard key, click the Done button. The binding is now complete.
 
-![X-Plane Menu](media/AssignKeyboardKeyPtt.png ':size=1280')
+![X-Plane Menu](media/AssignKeyboardKeyPtt.png ':size=641')
 
 ## Command Bindings
 
@@ -113,7 +113,7 @@ In addition to using the xPilot Client interface to send or receive text radio m
 
 **<span style="color:red;">Keyboard Key Binding: If you bind a keyboard key to open and close the Text Message Console window, you will not be able to toggle the window closed because the text input box has priority to capture any text that is typed. Instead, you will have to manually close the window. If you bind a joystick button to toggle the window, it should work as expected.</span>**
 
-![Text Message Console](media/TextMessageConsole.png ':size=640')
+![Text Message Console](media/TextMessageConsole.png ':size=266')
 
 To send a message, type it in the message composition area at the bottom of the window and press enter on your keyboard. Radio text messages sent in the "Messages" tab are sent out on whichever COM frequency you have selected for transmit. Received radio messages directed towards you appear in white text. All other received messages will be gray. Radio messages sent by you will be cyan colored.
 
@@ -135,12 +135,12 @@ The following dot commands are supported in the Text Message Console in X-Plane:
 
 Private messages will appear in a separate tab in the Text Message Console window. To close a tab, click the blue "X". To initiate a new private message, type the command `.chat CALLSIGN` (where CALLSIGN is the callsign of the user you want to send a message to) and press enter. A new tab will open titled with the callsign you specified. Type your message in the message composition area at the bottom of the tab and press enter on your keyboard to send the message.
 
-![Private Message](media/TextMessageConsole_PrivateMessage.png ':size=638')
+![Private Message](media/TextMessageConsole_PrivateMessage.png ':size=266')
 
 ## Notification Panel
 All notifications (text radio messages, private messages, network broadcast alerts, server messages, etc.) will appear in the translucent notification panel at the top right of the X-Plane window. If you hover over the notification panel, a scrollbar will appear allowing you to scroll through the messages. The notification panel will automatically hide after a set time. See the [Settings](xplane?id=settings) section for details on how to configure the timeout period.
 
-![Notification Panel](media/NotificationPanel.png ':size=780')
+![Notification Panel](media/NotificationPanel.png ':size=115')
 
 **VR Users:** Due to limitations with the X-Plane VR API, a VR window cannot be programmatically placed in a specific location. Because of this, the notification panel will be placed front and center each time it opens. As a workaround, toggle the notification panel (either through the plugin menu or via a binded command) to force the panel to stay open and then move it someplace else (like in the co-pilots seat).
 
@@ -148,4 +148,4 @@ All notifications (text radio messages, private messages, network broadcast aler
 
 The Nearby ATC window shows controllers who are within range, organized by facility type; the list includes the callsign, frequency and person's name of the station. There are two action buttons available. The first button will request the station information (controller ATIS) and the second button will tune your COM1 radio frequency to the controller's frequency.
 
-![Nearby ATC](media/NearbyATC.png ':size=579')
+![Nearby ATC](media/NearbyATC.png ':size=375')

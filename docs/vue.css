@@ -1004,3 +1004,7 @@ code .token {
     position: relative;
     left: auto
 }
+
+.img-border {
+    border: 1px solid #000;
+}

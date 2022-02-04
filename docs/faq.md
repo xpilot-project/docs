@@ -19,9 +19,9 @@ Make sure your radio stack in the aircraft is properly configured for TX and RX.
 
 ## xPilot doesn't connect to X-Plane - stuck on "Waiting for X-Plane Connection"
 * Verify xPilot has an entry in X-Plane's plugin menu. If this is not the case, make sure there is an xPilot plugin in `X-Plane 11/Resources/plugins/xPilot`.
-* Ensure that X-Plane is running with a flight open and that it is not blocked by your Firewall. See [Allowing X-Plane through your firewall](https://www.x-plane.com/kb/allowing-x-plane-through-your-firewall/).<br/><br/>
-The **Port we receive on (legacy)** in X-Plane must also be set to **49000** under **X-Plane Settings > Network**. Also, verify that the switch at the bottom of the Network tab is set to **Allow incoming connections**. Restart X-Plane after making these changes.![X-Plane Network Settings](media/XplaneNetworkSettings.png ':size=1280')
-* Restart your computer.
+* Ensure that X-Plane is running with a flight open and that it is not blocked by your Firewall. See [Allowing X-Plane through your firewall](https://www.x-plane.com/kb/allowing-x-plane-through-your-firewall/).
+* Restart your computer.<br/><br/>
+The **Port we receive on (legacy)** in X-Plane must also be set to **49000** under **X-Plane Settings > Network**. Also, verify that the switch at the bottom of the Network tab is set to **Allow incoming connections**. Restart X-Plane after making these changes.![X-Plane Network Settings](media/XplaneNetworkSettings.png ':size=720')
 
 ## Error connecting to voice server. Please check your VATSIM credentials and try again.
 If you recently created or reactivated your VATSIM account, you will need to wait a few minutes for your account to synchronize with the servers; and in some cases, up to 24-hours. Until your account is synchronized, you will not be able to use voice &mdash; only text. You must also take and pass the "P0: Basic VATSIM Member" exam. Otherwise, check your credentials and try again; the password is case sensitive.
@@ -29,4 +29,4 @@ If you recently created or reactivated your VATSIM account, you will need to wai
 ## macOS: Error reading file...
 Due to macOS security settings, if you receive a "Error reading file..." error when updating xPilot, click the folder icon, choose the X-Plane folder path and try again.
 
-![Error Reading File](media/MacOSErrorReadingFile.png ':size=591')
+![Error Reading File](media/MacOSErrorReadingFile.png ':size=759')
