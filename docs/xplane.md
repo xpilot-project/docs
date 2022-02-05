@@ -8,7 +8,7 @@ The xPilot plugins settings can be accessed through the X-Plane menu: `Plugins >
 
 All xPilot Plugin settings are saved to a file named `Config.json` in the `X-Plane 11/Resources/plugins/xPilot/Resources` folder.
 
-![X-Plane Settings](media/XplaneSettings.png ':size=386')
+![X-Plane Settings](media/XplaneSettings.png ':size=408')
 
 * **Automatically Show Notification Panel**<br/>If this option is enabled, if a new radio text message is received, it will display in a small translucent panel at the top right of the X-Plane window.
 
@@ -27,6 +27,8 @@ All xPilot Plugin settings are saved to a file named `Config.json` in the `X-Pla
 * **Enable Transmit Indicator**<br/>Enable this option to see a green transmit indicator at the top left corner of your X-Plane window when you press your Push to Talk.
 
 * **Enable Aircraft Engine Sounds**<br/>Enable this option to add ambient engine sounds to other aircraft.
+
+* **Aircraft Engine Sound Volume**<br/>This slider changes the engine sound volume of other aircraft.
 
 ## CSL Configuration
 
