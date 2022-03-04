@@ -136,6 +136,7 @@ xPilot supports the following dot commands, which can be entered in the command 
 | `.ignore <Callsgin>` | Adds the specified aircraft to the ignore list. xPilot will not render an aircraft model for any aircraft on the ignore list. The list is cleared when xPilot is closed. |
 | `.unignore <Callsign>` | Removes the specified aircraft from the ignore list. |
 | `.ignorelist` | Lists all the callsigns currently in the ignore list. |
+| `.simp` | Sets the IP address of the computer running your X-Plane instance; useful if you want to run xPilot on a separate machine from X-Plane. See [Running xPilot Over a Network](client?id=running-xpilot-over-a-network) for details. |
 | `.visualip` | See [Running xPilot Over a Network](client?id=running-xpilot-over-a-network). |
 
 ## Disconnecting from VATSIM
@@ -148,7 +149,7 @@ If you have a networked setup with one or more computers running your X-Plane vi
 
 In xPilot, use the command `.visualip <VisualMachine1> <VisualMachine2>...` to set the IP addresses of your visual machines. For example, `.visualip 192.168.1.50 192.168.1.60`. **You must restart xPilot after setting the visual machine IP(s) for the changes to take effect.** The machine IP addresses with be saved in the xPilot client configuration for the next time you launch xPilot. To clear the visual machine IP(s), use the command `.visualip` (without the IP addresses).
 
-Additionally, you can install the xPilot client on a separate computer from your master X-Plane instance. To configure this, open `AppConfig.json` in a text editor (see the [FAQ](faq) on where to find the configuration file) and change the `XplaneNetworkAddress` to the IP address of the machine where the master instance of X-Plane is installed. By default, `XplaneNetworkAddress` is `127.0.0.1` (localhost), because it's assumed that xPilot is installed on the same machine as the master X-Plane instance. The xPilot client must be closed before making changes to the configuration file. **<span style="color:red;">Only change this if you know what you are doing!</span>**
+Alternatively, you can run the xPilot client on a separate computer from your machine running X-Plane. Use the command `.simip` to set the IP address of the computer running your X-Plane instance. For example: `.simip 192.168.1.100`. To clear the IP address, enter the command `.simip` (without an IP address). The xPilot client must be closed before making changes to the configuration file. **<span style="color:red;">Only run this command if you know what you're doing!</span>**
 
 ## Shared Cockpit (Observer) Mode
 xPilot supports the ability to connect in observer mode so that your aircraft does not appear to other users on the network. This feature is intended for use with shared cockpit operations. To use this feature, the first pilot should connect to the network normally, and the second pilot should connect in observer mode. The second pilot must use the same callsign as the first pilot, with a letter appended to the end.
