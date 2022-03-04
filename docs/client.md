@@ -136,7 +136,7 @@ xPilot supports the following dot commands, which can be entered in the command 
 | `.ignore <Callsgin>` | Adds the specified aircraft to the ignore list. xPilot will not render an aircraft model for any aircraft on the ignore list. The list is cleared when xPilot is closed. |
 | `.unignore <Callsign>` | Removes the specified aircraft from the ignore list. |
 | `.ignorelist` | Lists all the callsigns currently in the ignore list. |
-| `.simp` | Sets the IP address of the computer running your X-Plane instance; useful if you want to run xPilot on a separate machine from X-Plane. See [Running xPilot Over a Network](client?id=running-xpilot-over-a-network) for details. |
+| `.simip` | Sets the IP address of the computer running your X-Plane instance; useful if you want to run xPilot on a separate machine from X-Plane. See [Running xPilot Over a Network](client?id=running-xpilot-over-a-network) for details. |
 | `.visualip` | See [Running xPilot Over a Network](client?id=running-xpilot-over-a-network). |
 
 ## Disconnecting from VATSIM
