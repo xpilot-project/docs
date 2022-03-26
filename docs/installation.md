@@ -43,6 +43,18 @@ When you first launch xPilot, you will be prompted to install a CSL model set. I
 
 The download is approximately 560 MB. Depending on your internet download speed, it may take a few minutes to download. A progress bar will appear showing the progress of the download.
 
+Before the download can start, you must authenticate yourself using your VATSIM network credentials. Click the "Get Token" button to generate a one-time download token. Your internet browser will open to a website with your download token.
+
+![Get Download Token](media/ModelDownloadGetToken.png ':size=250')
+
+![Download Token](media/DownloadToken.png ':size=207')
+
+Type (or copy and paste) the download token in the xPilot client to begin the download.
+
+![Confirm Download Token](media/ConfirmDownloadToken.png ':size=250')
+
+A progress bar will appear showing the progress of the download.
+
 ![Install CSL Models](media/ModelsDownloading.png ':size=250')
 
 Once the download is complete, you will be prompted to choose the root folder of where your X-Plane 11 instance is installed.
@@ -56,4 +68,4 @@ After you select the path and click **OK**, the models will begin installing. Th
 ## Install Additional CSL Packages
 Additional CSL model packages can be downloaded and installed to expand your CSL library. To enable additional packages, you will need to specify the paths to where the models are installed in the xPilot settings in X-Plane (`Plugins > xPilot > Settings`). After adding the new folder path, you must restart X-Plane.
 
-![X-Plane CSL Configuration](media/XplaneCSLConfiguration.png ':size=368')
+![X-Plane CSL Configuration](media/XplaneCSLConfiguration.png ':size=385')
