@@ -8,11 +8,13 @@ The xPilot plugins settings can be accessed through the X-Plane menu: `Plugins >
 
 All xPilot Plugin settings are saved to a file named `Config.json` in the `X-Plane 11/Resources/plugins/xPilot/Resources` folder.
 
-![X-Plane Settings](media/XplaneSettings.png ':size=408')
+![X-Plane Settings](media/XplaneSettings.png ':size=385')
 
 * **Automatically Show Notification Panel**<br/>If this option is enabled, if a new radio text message is received, it will display in a small translucent panel at the top right of the X-Plane window.
 
 * **Hide Notification Panel After...**<br/>This option sets how long the notification panel should stay open (in seconds) before it automatically disappears.
+
+* **Notification Panel Position**<br/>This option allows you to set the position of the Notification Panel in the X-Plane window.
 
 * **Show Callsign Labels**<br/>If this option is enabled, floating callsign labels will be placed above all aircraft in the sim.
 
@@ -36,7 +38,7 @@ xPilot has no complex or special model matching rule sets that need to be instal
 
 In the xPilot Plugin settings (accessed via `Plugins > xPilot > Settings`), there is a section to define the path(s) to where your CSL model sets are installed. You can define up to seven different paths.
 
-![CSL Configuration](media/XplaneCSLConfiguration.png ':size=368')
+![CSL Configuration](media/XplaneCSLConfiguration.png ':size=385')
 
 To define a new path, click the `Browse` button and browse to the root folder of your CS models, or manually type in the full path. If there are multiple subfolders, xPilot will search the folders for additional models.
 
@@ -52,7 +54,7 @@ If you see this error, make sure you have a CSL model package installed (such as
 
 ## Advanced Options
 
-![Advanced Options](media/XplaneAdvancedSettings.png ':size=368')
+![Advanced Options](media/XplaneAdvancedSettings.png ':size=385')
 
 * **Override "Contact ATC" Command**<br/>If this option is enabled, xPilot will ignore the "Contact ATC" X-Plane command. This is generally only useful for users who also fly on PilotEdge.
 
