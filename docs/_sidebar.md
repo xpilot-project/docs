@@ -2,6 +2,7 @@
 
 - [System Requirements](system-requirements)
 - [Installation](installation?id=client-installation)
+  - [Configuring xPilot](installation?id=configuring-xpilot)
   - [CSL Installation](installation?id=csl-installation)
   - [Install Additional CSL Packages](installation?id=install-additional-csl-packages)
 - [xPilot Client](client?id=xpilot-client)

@@ -5,6 +5,8 @@
 * macOS: `~/Library/Application Support/org.vatsim.xpilot/AppConfig.json`
 * Linux: `~/.local/share/org.vatsim.xpilot/AppConfig.json` (you will have to enable hidden files/folders to see the `.local` folder)
 
+!> If you have the xPilot client running, you can enter the command `.appdata` which will open the folder directly.
+
 ## Disconnected due to low frame rates
 VATSIM requires that the X-Plane users maintain at least 20 frames-per-second during flight. The reason for this is to prevent a phenomena called "time dilation", which is when the simulation rate of X-Plane drops below real-time, which results in an aircraft flying slower on radar than what their groundspeed reports. X-Plane enforces a strict 20 FPS minimum to ensure the simulation rate runs in real-time. You can read more about this here: https://www.x-plane.com/kb/the-simulators-measurement-of-time-is-slow/
 
@@ -25,6 +27,11 @@ The **Port we receive on (legacy)** in X-Plane must also be set to **49000** und
 
 ## Error connecting to voice server. Please check your VATSIM credentials and try again.
 If you recently created or reactivated your VATSIM account, you will need to wait a few minutes for your account to synchronize with the servers; and in some cases, up to 24-hours. Until your account is synchronized, you will not be able to use voice &mdash; only text. You must also take and pass the "P0: Basic VATSIM Member" exam. Otherwise, check your credentials and try again; the password is case sensitive.
+
+## CSL Installation: The X-Plane folder is not readable (Windows Users)
+If you get this error while trying to install the CSL model set, it means your user does not have permission to access the folder where X-Plane is installed. Try running the xPilot client as an Administrator and try agian.
+
+![X-Plane folder is not readable](media/XplaneFolderNotReadable.png ':size=250')
 
 ## macOS: Error reading file...
 Due to macOS security settings, if you receive a "Error reading file..." error when updating xPilot, click the folder icon, choose the X-Plane folder path and try again.

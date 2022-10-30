@@ -4,17 +4,19 @@ The xPilot client is the main user interface that is used to connect to the VATS
 
 ![xPilot](media/Client.png ':size=274')
 
-!> **macOS Users:** When you launch xPilot for the first time on macOS, you will be asked to allow xPilot to access the microphone. You must allow access in order to use the voice communication functionality of the client.<br/>![Microphone Access](media/MacOSMicrophoneAccess.png ':size=186')
+?>
+<span style="font-weight:bold;font-size:16px;">macOS Users</span><br/>
+When you launch xPilot for the first time on macOS, you will be asked to allow xPilot to access the microphone. You must allow access in order to use the voice communication functionality of the client.<br/>![Microphone Access](media/MacOSMicrophoneAccess.png ':size=186')
 
 ## Settings
 
-To configure the xPilot client, click the **Settings** button. You will see the screen shown below.
+To configure the xPilot client, click the <span class="toolbar-btn">SETTINGS</span> button. You will see the window shown below.
 
-![Settings](media/Settings.png ':size=612')
+![Settings](media/Settings.png ':size=647 :class=imgshadow')
 
 Before you can connect to the network, you must configure your VATSIM credentials. If you wish to utilize voice communications, you must also configure your microphone and listen device.
 
-The VATSIM ID, VATSIM Password and Name fields should be self-explanatory. The Home Airport field is optional.
+The VATSIM ID, VATSIM Password and Name fields should be self-explanatory. The Home Airport field is optional (if filled in, it will display next to your name when connected to the network).
 
 Select a VATSIM server which you would like to connect to. You should choose a server that is geographically closest to you. The VATSIM servers are inter-connected, so you will be able to see all pilots and controllers regardless of which server you are connected to.
 
@@ -28,13 +30,11 @@ If **Keep xPilot window visible** is checked, the xPilot client window will alwa
 Your Push to Talk button must be set within X-Plane. See the [How to Assign PTT](xplane?id=how-to-assign-ptt) section for information on how to bind your PTT.
 
 ### Audio Devices
-The Audio API will show the audio drivers available to xPilot. If you are on Windows, this dropdown will show multiple options: MME, Windows Direct Sound, Windows WASAPI and Windows WDM-KS. MME or Windows WASAPI are the most common, but another option might work better with your audio device.
-
-The **Microphone Device** is what will be used to communicate with VATSIM controllers. xPilot employs automatic gain control to automatically increase the gain of your microphone input volume. In some circumstances, you may need to manually increase the input volume of your microphone device in your system settings if it is too low.
+The **Microphone Device** is what will be used to communicate with VATSIM controllers. When you change your microphone device, you must recalibrate the microphone volume. Use the slider below the Microphone Device list to adjust the volume of your microphone. Ideally, the calibration indicator should stay within the green zone when speaking at a normal volume. If the indicator is constantly red, you should reduce the volume slider.
 
 The **Listen Device** is the audio device that will be used as the output device for listening to voice transmissions from the controllers and other pilots.
 
-If the audio device is not yet plugged in, you will need to close and restart the xPilot client to refresh the device lists.
+The audio device lists will automatically refresh if xPilot detects an audio device is removed or plugged in.
 
 You can also adjust the COM1 and COM2 volumes here. Alternatively, you can adjust the COM1 and COM2 volumes via the volume knobs in the aircraft radio panel. **Note:** The volume sliders in the xPilot settings do not reflect adjustments made via the aircraft radio stack volume knobs, and vice versa. So, if you adjust the radio volumes inside the aircraft, the volume sliders will not reflect this change; when you restart xPilot, the volumes will revert to the previous volume levels as set by the volume sliders.
 
@@ -43,33 +43,33 @@ If the **Allow aircraft radio stack volume knobs to control radio volume** is ch
 ### Radio Effects
 If the **Enable HF Squelch** is enabled, you will not hear the static white noise when tuned to an HF frequency. If you want a realistic HF frequency experience, leave this option off.
 
-If you check the box labeled **Disable Radio Effects**, the incoming voice audio will not be filtered to sound like a VHF radio &mdash; it'll sound more like a VOIP call. Generally, you want to leave this option unchecked so that the audio sounds realistic.
+If you check the box labeled **Disable Radio Effects**, the incoming voice audio will not be filtered to sound like a VHF radio &mdash; it'll sound more like a VOIP call. Generally, you want to leave this option unchecked so that the audio sounds realistic and akin to real-world radios.
 
 ## Connecting to VATSIM
-To connect to VATSIM, click the **CONNECT** button. You will see the Connect window. The callsign and aircraft type code field is required. The SELCAL code is optional.
+To connect to VATSIM, click the <span class="toolbar-btn">CONNECT</span> button. A connection window will appear. The callsign and aircraft type code fields are required. The SELCAL code is optional.
 
 The aircraft type code is the 3 to 4 character ICAO identifier code for the aircraft you are flying. This will allow other users to see you in their sim as the correct aircraft type. xPilot will suggest type codes based on what you type in the type code field. You can search by ICAO code, aircraft model or manufacturer, and xPilot will present you with a list of results to choose from. 
 
-![Type Code Suggestions](media/TypeCodeSuggestions.png ':size=250')
+![Type Code Suggestions](media/TypeCodeSearch.gif ':size=250')
 
 If you specify an invalid aircraft type code, you will a warning message prompting you to confirm your selection. You may continue connecting using the unknown type code, however, other network users may not see your aircraft rendered correctly in their simulator.
 
 ![Invalid Type Code](media/InvalidTypeCode.png ':size=250')
 
-Press the Connect button when you are ready to connect to the network. If the connection was successful, you will see a message in the main message area, and the Connect button will light blue and its label will change to "Disconnect". If there are controllers within range of your location, they will appear in the controller list on the left-hand side of the client. 
+Press the <span class="blue-btn">Connect to VATSIM</span> button when you are ready to connect to the network. If the connection was successful, you will see a message in the main message area, and the CONNECT button will turn blue and its label will change to DISCONNECT. If there are controllers within range of your location, they will appear in the controller list on the left-hand side of the client. 
 
-Your callsign will appear next to the **Settings** button after successfully connecting.
+Your callsign will appear next to the SETTINGS button after successfully connecting to the network.
 
-[See below](client?id=shared-cockpit-observer-mode) for details on using the shared cockpit (observer) mode.
+!> See [Shared Cockpit/Observer Mode](client?id=shared-cockpit-observer-mode) section for details on how to use the shared cockpit (observer) mode.
 
 ## Controlling the Transponder
 When flying on VATSIM, you will need to toggle your transponder between Standby Mode and Mode C. Mode C is used when you enter the active runway and any time you are airborne. Mode C allows the controller to see your altitude on their radar scope. Mode C is also used on the ground at some airports if they are using an airport surface surveillance system, such as ASDE-X. This will be noted on the airport diagram chart or in the controller's ATIS information.
 
-**Toggle Transponder Mode**: To toggle the transponder mode, you can click the **MODE C** button on the client. The button will change to a green color when Mode C is on. You can also toggle the transponder mode directly in your aircraft's transponder panel in the sim.
+**Toggle Transponder Mode**: To toggle the transponder mode, you can click the <span class="toolbar-btn">MODE C</span> button on the client. The button will turn green color when Mode C is on. You can also toggle the transponder mode directly in your aircraft's transponder panel in the sim.
 
 ![Mode C](media/ModeC.png ':size=70')
 
-**Squawking Ident**: a controller may ask you to squawk ident. This causes your data tag to appear differently on the controller's radar scope, helping them locate you in their airspace. If you are asked to squawk ident, you can press the **IDENT** button on the client, or in your aircraft's transponder panel in the sim. The **IDENT** button will light up green when xPilot has sent the ident signal to the network. When the ident is finished, the button will return to its normal state.
+**Squawking Ident**: a controller may ask you to squawk ident. This causes your data tag to appear differently on the controller's radar scope, helping them locate you in their airspace. If you are asked to squawk ident, you can press the <span class="toolbar-btn">IDENT</span> button on the client, or in your aircraft's transponder panel in the sim. The IDENT button will light up green when xPilot has sent the ident signal to the network. When the ident is finished, the button will return to its normal state.
 
 ![Transponder Ident](media/TransponderIdent.png ':size=74')
 
@@ -105,7 +105,7 @@ Each controller on VATSIM maintains their controller information (also known as 
 You can also request the controller information using the `.atis` dot command. Refer to the section on [Dot Commands](client?id=dot-commands) for details.
 
 ## Flight Plan
-Flight plans must be filed using the myVATSIM Flight Plan service website. If you click the `Flight Plan` button in the client, your default web browser will open to the myVATSIM website. If you are not authenticated, you will be asked to enter your VATSIM credentials (ID and Password).
+Flight plans must be filed using the myVATSIM Flight Plan service website. If you click the <span class="toolbar-btn">FLIGHT PLAN</span> button in the client, your default web browser will open to the myVATSIM flight plan website. If you are not authenticated, you will be asked to enter your VATSIM credentials (ID and Password).
 
 ## Private Messages
 Occasionally, you may wish to contact other users (pilots or controllers) via private message. Or they may contact you via private message. When a new private message arrives, a tab will be added with the sender’s callsign, highlighted in yellow. When you click on the tab, the message area for that chat will be displayed and the tab text will turn white. The first line will show the user’s name. If a new message arrives while the tab is not active, the tab will turn yellow again.
@@ -123,6 +123,7 @@ xPilot supports the following dot commands, which can be entered in the command 
 | ---------- |-------------|
 | `.chat <Callsign> <Message>` | Opens a new chat tab for the specified callsign. You can specify an initial message string to send. If no message string is specified, only a new chat window is opened. You can also use `.msg`
 | `.clear`| Clears the contents of the active message tab.
+| `.copy`| Copies the contents of the active message tab to the system clipboard.
 | `.close` | Closes the current chat tab.
 | `.atis <Callsign>` | Requests the controller text information/ATIS for the specified callsign.
 | `.wx <Station>` | Requests the weather (METAR) for the specified station ID. You can also use `.metar`
@@ -138,13 +139,15 @@ xPilot supports the following dot commands, which can be entered in the command 
 | `.ignorelist` | Lists all the callsigns currently in the ignore list. |
 | `.simip` | Sets the IP address of the computer running your X-Plane instance; useful if you want to run xPilot on a separate machine from X-Plane. See [Running xPilot Over a Network](client?id=running-xpilot-over-a-network) for details. |
 | `.visualip` | See [Running xPilot Over a Network](client?id=running-xpilot-over-a-network). |
+| `.appdata`| Opens the client application data folder using the system file explorer.
 
 ## Disconnecting from VATSIM
-When you are ready to disconnect from VATSIM, click the **DISCONNECT** button on the xPilot client. The controller list will be cleared and all the aircraft in the sim will be removed. 
+When you are ready to disconnect from VATSIM, click the <span class="blue-btn">DISCONNECT</span> button. The controller list will be cleared and all the aircraft in the sim will be removed. 
 
 xPilot will automatically disconnect you from the network if you shut down the sim. You will also be disconnected if you switch airports or load a different flight in the sim.
 
 ## Running xPilot Over a Network
+
 If you have a networked setup with one or more computers running your X-Plane visuals, you can configure xPilot to inject aircraft onto each of these machines. You must first run the xPilot installer on each of the machines so that the xPilot plugin is installed.
 
 In xPilot, use the command `.visualip <VisualMachine1> <VisualMachine2>...` to set the IP addresses of your visual machines. For example, `.visualip 192.168.1.50 192.168.1.60`. **You must restart xPilot after setting the visual machine IP(s) for the changes to take effect.** The machine IP addresses with be saved in the xPilot client configuration for the next time you launch xPilot. To clear the visual machine IP(s), use the command `.visualip` (without the IP addresses).
@@ -159,12 +162,12 @@ For example, if the first pilot’s callsign is `JBU123`, the second pilot shoul
 ## Downloading Updates
 Each time you launch xPilot, it will check if there is a new version available. If there is a new version available, you will be prompted to download and install it.
 
+**<span style="color:red;">X-Plane MUST be closed before installing an xPilot update.</span>**
+
 ![New Version](media/NewVersionAvailable.png ':size=250')
 
-If you click **No**, you will be prompted again the next time you open xPilot.
+If you click <span class="gray-btn">No</span> you will be prompted again the next time you open xPilot.
 
-Clicking **Yes** will begin the download process. Once the download completes xPilot will close and the installer will open. On macOS, the disk image will mount, and a Finder window will open with the installer that needs to be launched.
-
-**<span style="color:red;">You must close X-Plane before installing the update, otherwise, the xPilot plugin cannot be updated properly.</span>**
+Clicking <span class="blue-btn">Yes</span> will begin the download process. Once the download completes xPilot will close and the installer will open. On macOS, the disk image will mount, and a Finder window will open with the installer that needs to be launched.
 
 ![New Version Downloading](media/NewVersionDownloading.png ':size=250')

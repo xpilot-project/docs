@@ -4,64 +4,65 @@
 
 Download installation files respective for your computer's operating system from the [xPilot Release Page](https://github.com/xpilot-project/xpilot/releases/latest). The following screenshots are from Windows; however, the installation process will be the same for macOS and Linux.
 
-!> If you're using Microsoft Edge, you may encounter a warning when trying to download the release file. Hover over the warning, click the three dots **(...)**, then click **Keep**.<br/><br/>
-![Microsoft Edge Warning](media/EdgeWarning.png ':size=290 :class=img-border')<br/><br/>
-A second window will pop up, click **Show more**<br/><br/>
-![Microsoft Edge Warning](media/EdgeWarning2.png ':size=518 :class=img-border')<br/><br/>
-Then click **Keep anyway**<br/><br/>
-![Microsoft Edge Warning](media/EdgeWarning3.png ':size=644 :class=img-border')
+!>
+<span style="font-weight:bold;font-size:16px;">Microsoft Edge Users</span><br/>
+If you use Microsoft Edge, the download may get blocked. Follow these steps to unblock the download.<br/><br/>
+![Microsoft Edge Warning](media/EdgeWarning.gif ':size=633 :class=imgshadow')
 
-?> If you're on Windows, you may encounter a Windows Defender SmartScreen speedbump when trying to launch the installer. Simply click the **More info** link then click the **Run anyway** button.
-
-![Windows Defender Speedbump](media/WindowsDefender.png ':size=498 :class=img-border')
+!>
+<span style="font-weight:bold;font-size:16px;">Microsoft Users</span><br/>
+You may encounter a Windows Defender SmartScreen warning when trying to launch the installer. Simply click `More info` then click `Run anyway`<br/><br/>
+![Windows Defender Speedbump](media/WindowsDefender.gif ':size=512')
 
 ### xPilot Client Install Directory
 
 Choose a folder to install the xPilot client. It is recommended that you leave it as the default folder.
 
-![Install Directory](media/InstallDirectory.png ':size=377')
+![Install Directory](media/InstallDirectory.png ':size=377 :class=imgshadow')
+
+### X-Plane 12 Location
+
+Next, specify the root folder path of where X-Plane 12 is installed to install the xPilot plugin. <span style="color:red;font-weight:bold;">If you do not use X-Plane 12, skip this step.</span>
+
+![X-Plane Path](media/Xplane12Path.png ':size=377 :class=imgshadow')
 
 ### X-Plane 11 Location
 
-Next, specify the root folder path of where X-Plane 11 is installed to install the xPilot plugin.
+Next, specify the root folder path of where X-Plane 11 is installed to install the xPilot plugin. <span style="color:red;font-weight:bold;">If you do not use X-Plane 11, skip this step.</span>
 
-![X-Plane Path](media/XplanePath.png ':size=377')
+![X-Plane Path](media/Xplane11Path.png ':size=377 :class=imgshadow')
 
 !> **Advanced Users:** If you have a multi-computer setup for X-Plane, you will need to run this installer on each computer to install the plugin on that X-Plane instance.
 
 Now launch X-Plane and start a flight. If the xPilot plugin is installed correctly, you will see a new `xPilot` submenu under the X-Plane plugin menu.
 
-![X-Plane Plugin Menu](media/PluginMenu.png ':size=253 :class=img-border')
+![X-Plane Plugin Menu](media/PluginMenu.png ':size=250')
+
+## Configuring xPilot
+
+When you first launch xPilot, you will be asked to configure the client. Click the <span class="blue-btn">Yes</span> button to open the Settings window. See the [Settings](client?id=settings) section for more details on how to configure xPilot.
+
+![X-Plane Plugin Menu](media/ConfigurationRequired.png ':size=250')
 
 ## CSL Installation
 
 xPilot has no special or complex model matching rules that need to be configured. Instead, you must have at least one CSL model package installed and xPilot will handle the rest. CSL models are essentially the aircraft models that X-Plane renders as other flying aircraft in your sim. Without these models, xPilot will not be able to render other VATSIM users in the sim.
 
-When you first launch xPilot, you will be prompted to install a CSL model set. It is recommended that you click **Yes** to automatically install and configure the Bluebell CSL model set. If you choose No, you will need to manually install the model set yourself (only recommended for advanced users).
-
 ![Install CSL Models](media/DownloadModels.png ':size=250')
+
+When you attempt to connect to the network for the first time, you will be prompted to install a CSL model set. It is recommended that you click <span class="blue-btn">Yes</span> to automatically install and configure the Bluebell CSL model set. If you choose <span class="gray-btn">No</span> you will need to manually install the model set yourself (only recommended for advanced users).
 
 The download is approximately 560 MB. Depending on your internet download speed, it may take a few minutes to download. A progress bar will appear showing the progress of the download.
 
-Before the download can start, you must authenticate yourself using your VATSIM network credentials. Click the "Get Token" button to generate a one-time download token. Your internet browser will open to a website with your download token.
-
-![Get Download Token](media/ModelDownloadGetToken.png ':size=250')
-
-![Download Token](media/DownloadToken.png ':size=207')
-
-Type (or copy and paste) the download token in the xPilot client to begin the download.
-
-![Confirm Download Token](media/ConfirmDownloadToken.png ':size=250')
-
-A progress bar will appear showing the progress of the download.
-
 ![Install CSL Models](media/ModelsDownloading.png ':size=250')
 
-Once the download is complete, you will be prompted to choose the root folder of where your X-Plane 11 instance is installed.
+Once the download is complete, you will be prompted to choose the root folder of where your X-Plane instance is installed.
+
+?> If you have multiple X-Plane instances (e.g. X-Plane 11 and X-Plane 12), you can call up the CSL download prompt again (once the current process finishes) by enter the command `.downloadcsl`
 
 ![Set X-Plane Path](media/ModelsXplaneFolder.png ':size=250')
 
-After you select the path and click **OK**, the models will begin installing. This may take several minutes. Once the process is complete, the model installation window will close and a message will appear in the main window telling you the CSL aircraft model package was successfully installed. **You will need to restart xPilot (and X-Plane if it was already open).**
+After you select the path and click <span class="blue-btn">OK</span> the models will begin installing. This may take several minutes. Once the process is complete, the model installation window will close and a message will appear in the main window telling you the CSL aircraft model package was successfully installed. <span style="color:red;font-weight:bold;">You will need to restart xPilot and X-Plane for the changes to take effect.</span>
 
 ![Installing Models](media/ModelsInstalling.png ':size=250')
 

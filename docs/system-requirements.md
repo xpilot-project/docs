@@ -1,8 +1,8 @@
 # System Requirements
 
 * Operating System:
-  * **Windows** Microsoft Windows 10, 64-bit only.
-  * **macOS** macOS 10.14 or newer, 64-bit only. Successfully tested with macOS Catalina (10.15.7).
+  * **Windows** Microsoft Windows 10 or 11, 64-bit only.
+  * **macOS** macOS 10.15 or newer (x64 or Apple Silicon)
   * **Linux** 64-bit only. xPilot is built on Ubuntu 20.04; therefore, it should run on any modern Linux distribution.
 
 * [X-Plane 11.50](http://x-plane.com/) (or newer), with suitable graphics hardware.

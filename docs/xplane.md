@@ -34,15 +34,15 @@ All xPilot Plugin settings are saved to a file named `Config.json` in the `X-Pla
 
 ## CSL Configuration
 
-xPilot has no complex or special model matching rule sets that need to be installed or configured. You must have at least one CSL model set package installed before you can use xPilot. The most popular model set is Bluebell CSL. When you first install xPilot, you will be prompted to install a CSL model set.
+xPilot has no complex or special model matching rule sets that need to be installed or configured. You must have at least one CSL model set package installed before you can use xPilot. The most popular model set is Bluebell CSL. When you first install xPilot, you will be prompted to install a CSL model set. See the [CSL Installation](installation?id=csl-installation) for details on how to install the CSL model set.
 
 In the xPilot Plugin settings (accessed via `Plugins > xPilot > Settings`), there is a section to define the path(s) to where your CSL model sets are installed. You can define up to seven different paths.
 
 ![CSL Configuration](media/XplaneCSLConfiguration.png ':size=385')
 
-To define a new path, click the `Browse` button and browse to the root folder of your CS models, or manually type in the full path. If there are multiple subfolders, xPilot will search the folders for additional models.
+To define a new path, click the <span class="xplane-btn">Browse</span> button and browse to the root folder of your CS models, or manually type in the full path. If there are multiple subfolders, xPilot will search the folders for additional models.
 
-You can disable a path from being loaded when you start X-Plane by unchecking the `Enabled` checkbox.
+You can disable a path from being loaded when you start X-Plane by unchecking the <span class="xplane-btn">Enabled</span> checkbox.
 
 Each time you load the xPilot client, it will verify that you have CSL models installed and properly configured. If no models are found, or the path is invalid or not enabled, the Connect button will become disabled and a red error message will be presented in the main message area:
 
@@ -150,6 +150,10 @@ All notifications (text radio messages, private messages, network broadcast aler
 
 ## Nearby ATC
 
-The Nearby ATC window shows controllers who are within range, organized by facility type; the list includes the callsign, frequency and person's name of the station. There are two action buttons available. The first button will request the station information (controller ATIS) and the second button will tune your COM1 radio frequency to the controller's frequency.
+The Nearby ATC window shows controllers who are within range, organized by facility type; the list includes the callsign, frequency and person's name of the station. There are three action buttons available. The first button will request the station information (controller ATIS) and the second and third button will tune your COM1 or COM2 radio frequency to the controller's frequency.
 
-![Nearby ATC](media/NearbyATC.png ':size=375')
+![Nearby ATC](media/NearbyATC.png ':size=371')
+
+At the bottof the Nearby ATC list, there is a dedicated section to tune your COM1 or COM2 radio to the VATSIM UNICOM frequency.
+
+![Nearby ATC](media/NearbyATC_Unicom.png ':size=368')
