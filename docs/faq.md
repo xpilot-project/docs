@@ -20,7 +20,9 @@ This is typically caused by a poor connection between you and the network server
 Make sure your radio stack in the aircraft is properly configured for TX and RX. In some cases, the aircraft model may not have a working audio panel, in which case you can trick xPilot into enabling TX and/or RX via the `.tx` and/or `.rx` dot commands. See the [Dot Commands](client?id=dot-commands) section for details.
 
 ## xPilot doesn't connect to X-Plane - stuck on "Waiting for X-Plane Connection"
-* Verify xPilot has an entry in X-Plane's plugin menu. If this is not the case, make sure there is an xPilot plugin in `X-Plane 11/Resources/plugins/xPilot`.
+* <strong>Windows Users:</strong> Add xPilot.exe to the Windows Defender exclusions list, and/or try running xPilot as an Administrator.
+![Windows Defender Exclusion](media/WindowsDefenderExclusion.gif)
+* Verify xPilot has an entry in X-Plane's plugin menu. If this is not the case, make sure there is an xPilot plugin in `X-Plane/Resources/plugins/xPilot`.
 * Ensure that X-Plane is running with a flight open and that it is not blocked by your Firewall. See [Allowing X-Plane through your firewall](https://www.x-plane.com/kb/allowing-x-plane-through-your-firewall/).
 * Restart your computer.<br/><br/>
 The **Port we receive on (legacy)** in X-Plane must also be set to **49000** under **X-Plane Settings > Network**. Also, verify that the switch at the bottom of the Network tab is set to **Allow incoming connections**. Restart X-Plane after making these changes.![X-Plane Network Settings](media/XplaneNetworkSettings.png ':size=720')
