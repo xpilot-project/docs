@@ -6,7 +6,7 @@ The xPilot plugin communicates with the xPilot client and interfaces with X-Plan
 
 The xPilot plugins settings can be accessed through the X-Plane menu: `Plugins > xPilot > Settings`.
 
-All xPilot Plugin settings are saved to a file named `Config.json` in the `X-Plane 11/Resources/plugins/xPilot/Resources` folder.
+All xPilot Plugin settings are saved to a file named `Config.json` in the `X-Plane/Resources/plugins/xPilot/Resources` folder.
 
 ![X-Plane Settings](media/XplaneSettings.png ':size=385')
 
@@ -93,7 +93,7 @@ Open the "Keyboard" menu in the X-Plane settings. In the search bar, type in "xP
 
 ## Command Bindings
 
-There are several commands that can be binded to one or more keyboard keys, joystick buttons or switches within X-Plane. If you are not familiar with how to setup command shortcuts in X-Plane, please refer to the [X-Plane 11 Manual](https://www.x-plane.com/manuals/desktop/index.html#configuringkeyboardshortcuts) for more information.
+There are several commands that can be binded to one or more keyboard keys, joystick buttons or switches within X-Plane. If you are not familiar with how to setup command shortcuts in X-Plane, please refer to the [X-Plane Manual](https://www.x-plane.com/manuals/desktop/index.html#configuringkeyboardshortcuts) for more information.
 
 Available X-Plane Commands:
 
