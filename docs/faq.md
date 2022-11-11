@@ -31,7 +31,7 @@ The **Port we receive on (legacy)** in X-Plane must also be set to **49000** und
 If you recently created or reactivated your VATSIM account, you will need to wait a few minutes for your account to synchronize with the servers; and in some cases, up to 24-hours. Until your account is synchronized, you will not be able to use voice &mdash; only text. You must also take and pass the "P0: Basic VATSIM Member" exam. Otherwise, check your credentials and try again; the password is case sensitive.
 
 ## CSL Installation: The X-Plane folder is not readable (Windows Users)
-If you get this error while trying to install the CSL model set, it means your user does not have permission to access the folder where X-Plane is installed. Try running the xPilot client as an Administrator and try agian.
+If you get this error while trying to install the CSL model set, it means your user does not have permission to access the folder where X-Plane is installed. Try running the xPilot client as an Administrator and try again.
 
 ![X-Plane folder is not readable](media/XplaneFolderNotReadable.png ':size=250')
 

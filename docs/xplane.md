@@ -154,6 +154,6 @@ The Nearby ATC window shows controllers who are within range, organized by facil
 
 ![Nearby ATC](media/NearbyATC.png ':size=371')
 
-At the bottof the Nearby ATC list, there is a dedicated section to tune your COM1 or COM2 radio to the VATSIM UNICOM frequency.
+At the bottom of the Nearby ATC list, there is a dedicated section to tune your COM1 or COM2 radio to the VATSIM UNICOM frequency.
 
 ![Nearby ATC](media/NearbyATC_Unicom.png ':size=368')

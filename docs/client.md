@@ -114,7 +114,7 @@ To reply to a private message, type your message in the command line at the bott
 
 You can initiate a private chat session by right-clicking on a controller in the controller list and choose "Open Private Chat" from the context menu. This will create a new tab (or switch to an existing tab if one exists). You can type your message and press enter to send it.
 
-You can also initate a private chat session by using the `.chat` dot command. Refer to the section on [Dot Commands](client?id=dot-commands) for details.
+You can also initiate a private chat session by using the `.chat` dot command. Refer to the section on [Dot Commands](client?id=dot-commands) for details.
 
 ## Dot Commands
 xPilot supports the following dot commands, which can be entered in the command line just below the message history in any tab.
@@ -133,7 +133,7 @@ xPilot supports the following dot commands, which can be entered in the command 
 | `.com2 <Frequency>`| Sets the COM2 radio to the specified frequency.
 | `.rx com# On\|Off`| Toggles receiving on the specified com radio. For example: `.rx com1 on`
 | `.tx com#`| Enables the COM1 or COM2 radio for transmit. For example: `.tx com2`
-| `.towerview <IP-Address> <Callsign>`| Connects xPilot to a proxy server (such as provided by Euroscope) in observer mode for the purpose of creating a tower view. The IP address defaults to 127.0.0.1 (localhost) and the callsign defaults to TOWER.
+| `.towerview <IP-Address> <Callsign>`| Connects xPilot to a proxy server (such as provided by EuroScope) in observer mode for the purpose of creating a tower view. The IP address defaults to 127.0.0.1 (localhost) and the callsign defaults to TOWER.
 | `.ignore <Callsign>` | Adds the specified aircraft to the ignore list. xPilot will not render an aircraft model for any aircraft on the ignore list. The list is cleared when xPilot is closed. |
 | `.unignore <Callsign>` | Removes the specified aircraft from the ignore list. |
 | `.ignorelist` | Lists all the callsigns currently in the ignore list. |
@@ -150,7 +150,7 @@ xPilot will automatically disconnect you from the network if you shut down the s
 
 If you have a networked setup with one or more computers running your X-Plane visuals, you can configure xPilot to inject aircraft onto each of these machines. You must first run the xPilot installer on each of the machines so that the xPilot plugin is installed.
 
-To use xPilot over a network, you must first enable TCP/IP support. Locate the xPilot plugin configuration file (`X-Plane/Resources/plugins/xPilot/Resources/Config.json`) and open it in a text editor. Change the `UseTcpSocket` option to `true`. Save and close the configuration file. If you have multiple X-Plane instances for each visual sceen, you will need to change this option on each instance. **<span style="color:red;">X-Plane must be closed before you update the configuration file.</span>**
+To use xPilot over a network, you must first enable TCP/IP support. Locate the xPilot plugin configuration file (`X-Plane/Resources/plugins/xPilot/Resources/Config.json`) and open it in a text editor. Change the `UseTcpSocket` option to `true`. Save and close the configuration file. If you have multiple X-Plane instances for each visual screen, you will need to change this option on each instance. **<span style="color:red;">X-Plane must be closed before you update the configuration file.</span>**
 
 In xPilot, use the command `.visualip <VisualMachine1> <VisualMachine2>...` to set the IP addresses of your visual machines. For example, `.visualip 192.168.1.50 192.168.1.60`. **You must restart xPilot after setting the visual machine IP(s) for the changes to take effect.** The machine IP addresses with be saved in the xPilot client configuration for the next time you launch xPilot. To clear the visual machine IP(s), use the command `.visualip` (without the IP addresses).
 
