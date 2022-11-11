@@ -8,4 +8,4 @@
 * [X-Plane 11.50](http://x-plane.com/) (or newer), with suitable graphics hardware.
 * CSL Model Set. The [Bluebell OBJ8 CSL Package](https://forums.x-plane.org/index.php?/files/file/37041-bluebell-obj8-csl-packages/) is highly recommended.
 
-If in doubt about X-Plane hardware requirements, please check the official [X-Plane 11 System Requirements](http://www.x-plane.com/kb/x-plane-11-system-requirements/).
+If in doubt about X-Plane hardware requirements, please check the official [X-Plane 11 System Requirements](http://www.x-plane.com/kb/x-plane-11-system-requirements/) or [X-Plane 12 System Requirements](https://www.x-plane.com/kb/x-plane-12-system-requirements/).
