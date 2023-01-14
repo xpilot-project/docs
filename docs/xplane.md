@@ -8,7 +8,7 @@ The xPilot plugins settings can be accessed through the X-Plane menu: `Plugins >
 
 All xPilot Plugin settings are saved to a file named `Config.json` in the `X-Plane/Resources/plugins/xPilot/Resources` folder.
 
-![X-Plane Settings](media/XplaneSettings.png ':size=385')
+![X-Plane Settings](media/XplaneSettings.png ':size=415')
 
 * **Automatically Show Notification Panel**<br/>If this option is enabled, if a new radio text message is received, it will display in a small translucent panel at the top right of the X-Plane window.
 
@@ -32,13 +32,25 @@ All xPilot Plugin settings are saved to a file named `Config.json` in the `X-Pla
 
 * **Aircraft Engine Sound Volume**<br/>This slider changes the engine sound volume of other aircraft.
 
+![X-Plane Settings](media/XplaneSettingsContrails.png ':size=415')
+
+* **Enable Contrails**<br/>Enable this option to enable contrails on jet aircraft.
+
+* **Minimum Altitude**<br/>The minimum altitude at which contrails are visible for jet aircraft.
+
+* **Maximum Altitude**<br/>The maximum altitude at which contrails are visible for jet aircraft.
+
+* **Life Time**<br/>How long (in seconds) does a contrail "puff" survive?
+
+* **Multiple Contrails**<br/>Enable on contrail per aircraft engine (more realistic, but may affect frame rate).
+
 ## CSL Configuration
 
 xPilot has no complex or special model matching rule sets that need to be installed or configured. You must have at least one CSL model set package installed before you can use xPilot. The most popular model set is Bluebell CSL. When you first install xPilot, you will be prompted to install a CSL model set. See the [CSL Installation](installation?id=csl-installation) for details on how to install the CSL model set.
 
 In the xPilot Plugin settings (accessed via `Plugins > xPilot > Settings`), there is a section to define the path(s) to where your CSL model sets are installed. You can define up to seven different paths.
 
-![CSL Configuration](media/XplaneCSLConfiguration.png ':size=385')
+![CSL Configuration](media/XplaneCSLConfiguration.png ':size=415')
 
 To define a new path, click the <span class="xplane-btn">Browse</span> button and browse to the root folder of your CS models, or manually type in the full path. If there are multiple subfolders, xPilot will search the folders for additional models.
 
@@ -54,7 +66,7 @@ If you see this error, make sure you have a CSL model package installed (such as
 
 ## Advanced Options
 
-![Advanced Options](media/XplaneAdvancedSettings.png ':size=385')
+![Advanced Options](media/XplaneAdvancedSettings.png ':size=415')
 
 * **Override "Contact ATC" Command**<br/>If this option is enabled, xPilot will ignore the "Contact ATC" X-Plane command. This is generally only useful for users who also fly on PilotEdge.
 
