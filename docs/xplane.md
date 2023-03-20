@@ -34,7 +34,7 @@ All xPilot Plugin settings are saved to a file named `Config.json` in the `X-Pla
 
 ![X-Plane Settings](media/XplaneSettingsContrails.png ':size=415')
 
-* **Enable Contrails**<br/>Enable this option to enable contrails on jet aircraft.
+* **Enable Contrails**<br/>Enable this option to enable contrails on jet aircraft (may affect frame rate).
 
 * **Minimum Altitude**<br/>The minimum altitude at which contrails are visible for jet aircraft.
 
