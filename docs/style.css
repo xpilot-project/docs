@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Sans+Pro:300,400,600");
 
-/* * {
+* {
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-text-size-adjust: none;
     -webkit-touch-callout: none;
     box-sizing: border-box
-} */
+}
 
 body:not(.ready) {
     overflow: hidden
@@ -86,7 +86,7 @@ kbd {
     border: 1px solid #ccc;
     border-radius: 3px;
     display: inline-block;
-    font-size: 12px!important;
+    font-size: 12px !important;
     line-height: 12px;
     margin-bottom: 3px;
     padding: 3px 5px;
@@ -373,7 +373,7 @@ body.sticky .sidebar-toggle {
 }
 
 .markdown-section>:first-child {
-    margin-top: 0!important
+    margin-top: 0 !important
 }
 
 .markdown-section hr {
@@ -480,6 +480,7 @@ body.close .content {
 }
 
 @media print {
+
     .app-nav,
     .github-corner,
     .sidebar,
@@ -489,25 +490,31 @@ body.close .content {
 }
 
 @media screen and (max-width:768px) {
+
     .github-corner,
     .sidebar,
     .sidebar-toggle {
         position: fixed
     }
+
     .app-nav {
         margin-top: 16px
     }
+
     .app-nav li ul {
         top: 30px
     }
+
     main {
         height: auto;
         overflow-x: hidden
     }
+
     .sidebar {
         left: -300px;
         transition: transform .25s ease-out
     }
+
     .content {
         left: 0;
         max-width: 100vw;
@@ -515,35 +522,43 @@ body.close .content {
         padding-top: 20px;
         transition: transform .25s ease
     }
+
     .app-nav,
     .github-corner {
         transition: transform .25s ease-out
     }
+
     .sidebar-toggle {
         background-color: transparent;
         width: auto;
         padding: 30px 30px 10px 10px
     }
+
     body.close .sidebar {
         transform: translateX(300px)
     }
+
     body.close .sidebar-toggle {
         background-color: hsla(0, 0%, 100%, .8);
         transition: background-color 1s;
         width: 284px;
         padding: 10px
     }
+
     body.close .content {
         transform: translateX(300px)
     }
+
     body.close .app-nav,
     body.close .github-corner {
         display: none
     }
+
     .github-corner:hover .octo-arm {
         -webkit-animation: none;
         animation: none
     }
+
     .github-corner .octo-arm {
         -webkit-animation: octocat-wave .56s ease-in-out;
         animation: octocat-wave .56s ease-in-out
@@ -551,14 +566,17 @@ body.close .content {
 }
 
 @-webkit-keyframes octocat-wave {
+
     0%,
     to {
         transform: rotate(0)
     }
+
     20%,
     60% {
         transform: rotate(-25deg)
     }
+
     40%,
     80% {
         transform: rotate(10deg)
@@ -566,14 +584,17 @@ body.close .content {
 }
 
 @keyframes octocat-wave {
+
     0%,
     to {
         transform: rotate(0)
     }
+
     20%,
     60% {
         transform: rotate(-25deg)
     }
+
     40%,
     80% {
         transform: rotate(10deg)
@@ -587,20 +608,10 @@ section.cover {
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    display: none
-}
-
-section.cover.show {
-    display: flex
-}
-
-section.cover.has-mask .mask {
-    background-color: #fff;
-    opacity: .8;
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%
+    display: flex;
+    background: #272C2E !important;
+    text-align: center;
+    color: #ffffff;
 }
 
 section.cover .cover-main {
@@ -622,75 +633,6 @@ section.cover a:hover {
 section.cover p {
     line-height: 1.5rem;
     margin: 1em 0
-}
-
-section.cover h1 {
-    color: inherit;
-    font-size: 2.5rem;
-    font-weight: 300;
-    margin: .625rem 0 2.5rem;
-    position: relative;
-    text-align: center
-}
-
-section.cover h1 a {
-    display: block
-}
-
-section.cover h1 small {
-    bottom: -.4375rem;
-    font-size: 1rem;
-    position: absolute
-}
-
-section.cover blockquote {
-    font-size: 1.5rem;
-    text-align: center
-}
-
-section.cover ul {
-    line-height: 1.8;
-    list-style-type: none;
-    margin: 1em auto;
-    max-width: 500px;
-    padding: 0
-}
-
-section.cover .cover-main>p:last-child a {
-    border-radius: 2rem;
-    border: 1px solid var(--theme-color, #42b983);
-    box-sizing: border-box;
-    color: var(--theme-color, #42b983);
-    display: inline-block;
-    font-size: 1.05rem;
-    letter-spacing: .1rem;
-    margin: .5rem 1rem;
-    padding: .75em 2rem;
-    text-decoration: none;
-    transition: all .15s ease
-}
-
-section.cover .cover-main>p:last-child a:last-child {
-    background-color: var(--theme-color, #42b983);
-    color: #fff
-}
-
-section.cover .cover-main>p:last-child a:last-child:hover {
-    color: inherit;
-    opacity: .8
-}
-
-section.cover .cover-main>p:last-child a:hover {
-    color: inherit
-}
-
-section.cover blockquote>p>a {
-    border-bottom: 2px solid var(--theme-color, #42b983);
-    transition: color .3s
-}
-
-section.cover blockquote>p>a:hover {
-    color: var(--theme-color, #42b983)
 }
 
 .sidebar,
@@ -909,6 +851,36 @@ body {
     content: attr(data-lang)
 }
 
+.markdown-section .tip {
+    border-bottom-right-radius: 2px;
+    border-left: 4px solid #f66;
+    border-top-right-radius: 2px;
+    margin: 2em 0;
+    padding: 12px 24px 12px 30px;
+    position: relative;
+}
+
+.markdown-section .tip:before {
+    background-color: #f66;
+    border-radius: 100%;
+    color: #fff;
+    content: "!";
+    font-family: Dosis, Source Sans Pro, Helvetica Neue, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    left: -12px;
+    line-height: 20px;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    top: 14px;
+}
+
+.markdown-section .tip {
+    background-color: #f8f8f8;
+}
+
 .token.cdata,
 .token.comment,
 .token.doctype,
@@ -1058,4 +1030,42 @@ code .token {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.screenshot {
+    position: absolute;
+    left: 50%;
+    margin-left: -435px;
+    bottom: 0%;
+    width: 840px;
+    height: 273px;
+    background: url('../media/Client.png') no-repeat;
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.85);
+    -moz-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.85);
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.85);
+}
+
+.logo {
+    font-size: 6em;
+    color: #ffffff;
+    position: relative;
+    margin-top: 40px;
+}
+
+.logo:after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 3px solid #0164AD;
+    left: 50%;
+    top: 60%;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-width: 5px 0 0 5px;
+    border-radius: 50%;
+}
+
+td:before {
+    content: "" !important
 }

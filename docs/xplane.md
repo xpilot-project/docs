@@ -8,7 +8,7 @@ The xPilot plugins settings can be accessed through the X-Plane menu: `Plugins >
 
 All xPilot Plugin settings are saved to a file named `Config.json` in the `X-Plane/Resources/plugins/xPilot/Resources` folder.
 
-![X-Plane Settings](media/XplaneSettings.png ':size=415')
+![X-Plane Settings](media/XplaneSettings.png ':size=440')
 
 * **Automatically Show Notification Panel**<br/>If this option is enabled, if a new radio text message is received, it will display in a small translucent panel at the top right of the X-Plane window.
 
@@ -28,11 +28,15 @@ All xPilot Plugin settings are saved to a file named `Config.json` in the `X-Pla
 
 * **Enable Transmit Indicator**<br/>Enable this option to see a green transmit indicator at the top left corner of your X-Plane window when you press your Push to Talk.
 
+![X-Plane Settings](media/XplaneSoundSettings.png ':size=440')
+
 * **Enable Aircraft Engine Sounds**<br/>Enable this option to add ambient engine sounds to other aircraft.
 
 * **Aircraft Engine Sound Volume**<br/>This slider changes the engine sound volume of other aircraft.
 
-![X-Plane Settings](media/XplaneSettingsContrails.png ':size=415')
+* **Aircraft Sound Playback Device**<br/>Select the audio device where you want the aircraft engine sounds to play. If left blank, xPilot will use the system default audio device.
+
+![X-Plane Settings](media/XplaneSettingsContrails.png ':size=440')
 
 * **Enable Contrails**<br/>Enable this option to enable contrails on jet aircraft (may affect frame rate).
 
@@ -50,7 +54,7 @@ xPilot has no complex or special model matching rule sets that need to be instal
 
 In the xPilot Plugin settings (accessed via `Plugins > xPilot > Settings`), there is a section to define the path(s) to where your CSL model sets are installed. You can define up to seven different paths.
 
-![CSL Configuration](media/XplaneCSLConfiguration.png ':size=415')
+![CSL Configuration](media/XplaneCSLConfiguration.png ':size=440')
 
 To define a new path, click the <span class="xplane-btn">Browse</span> button and browse to the root folder of your CS models, or manually type in the full path. If there are multiple subfolders, xPilot will search the folders for additional models.
 
@@ -66,7 +70,7 @@ If you see this error, make sure you have a CSL model package installed (such as
 
 ## Advanced Options
 
-![Advanced Options](media/XplaneAdvancedSettings.png ':size=415')
+![Advanced Options](media/XplaneAdvancedSettings.png ':size=440')
 
 * **Override "Contact ATC" Command**<br/>If this option is enabled, xPilot will ignore the "Contact ATC" X-Plane command. This is generally only useful for users who also fly on PilotEdge.
 

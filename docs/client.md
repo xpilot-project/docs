@@ -1,120 +1,142 @@
 # xPilot Client
 
-The xPilot client is the main user interface that is used to connect to the VATSIM network.
+The xPilot client serves as the primary user interface for connecting to the VATSIM network.
 
-![xPilot](media/Client.png ':size=274')
+![xPilot](media/Client.png ':size=273')
 
 ?>
 <span style="font-weight:bold;font-size:16px;">macOS Users</span><br/>
-When you launch xPilot for the first time on macOS, you will be asked to allow xPilot to access the microphone. You must allow access in order to use the voice communication functionality of the client.<br/>![Microphone Access](media/MacOSMicrophoneAccess.png ':size=186')
+Upon launching xPilot for the first time on macOS, a prompt will request permission to access the microphone. Granting access is necessary to utilize the voice communication features of the client.<br/>
+![Microphone Access](media/MacOSMicrophoneAccess.png ':size=186')
 
 ## Settings
 
-To configure the xPilot client, click the <span class="toolbar-btn">SETTINGS</span> button. You will see the window shown below.
+To access the configuration settings of the xPilot client, click on the <span class="toolbar-btn">SETTINGS</span> button. The window displayed below will appear. Before establishing a network connection, it is necessary to configure your VATSIM credentials. If you plan to utilize voice communications, configuring your microphone and listen device is also essential.
 
-![Settings](media/Settings.png ':size=647 :class=imgshadow')
+![Settings](media/Settings.png ':size=507')
 
-Before you can connect to the network, you must configure your VATSIM credentials. If you wish to utilize voice communications, you must also configure your microphone and listen device.
+The VATSIM ID, VATSIM Password, and Name fields should be self-explanatory. The Home Airport field is optional; if completed, it will be displayed next to your name while connected to the network.
 
-The VATSIM ID, VATSIM Password and Name fields should be self-explanatory. The Home Airport field is optional (if filled in, it will display next to your name when connected to the network).
+The Network Server dropdown menu provides only one option, "AUTOMATIC," which helps to connect your xPilot session automatically to the best network server, taking into account your geographic location and server availability.
 
-Select a VATSIM server which you would like to connect to. You should choose a server that is geographically closest to you. The VATSIM servers are inter-connected, so you will be able to see all pilots and controllers regardless of which server you are connected to.
+### Notifications
 
-If the **Automatically set transponder to Mode C on takeoff** is enabled, your aircraft's transponder will automatically change to Mode C after takeoff.
+![Settings](media/Settings_Notifications.png ':size=507')
 
-The toggle options on the right allow you to choose which events will cause aural sound notifications. The application icon in the task bar will also flash/bounce to grab your attention if xPilot is not the active window.
+The options listed in the "Notifications" tab allows you to personalize which events will trigger aural sound notifications and cause the application icon in the system taskbar to flash or bounce to capture your attention.
 
-If **Keep xPilot window visible** is checked, the xPilot client window will always remain visible (on top).
+### Audio
 
-### Push to Talk
-Your Push to Talk button must be set within X-Plane. See the [How to Assign PTT](xplane?id=how-to-assign-ptt) section for information on how to bind your PTT.
+The "Audio" tab is where you configure the audio settings for xPilot. See the [Audio Devices](#audio-devices) section for more information.
+
+### Miscellaneous
+
+![Settings](media/Settings_Miscellaneous.png ':size=507')
+
+If the **Automatically set transponder to Mode C on takeoff** option is selected, your aircraft's transponder will automatically switch to Mode C after takeoff.
+
+If the **Keep xPilot window visible** option is selected, the xPilot client window will consistently stay visible, remaining on top of other windows.
 
 ### Audio Devices
-The **Microphone Device** is what will be used to communicate with VATSIM controllers. When you change your microphone device, you must recalibrate the microphone volume. Use the slider below the Microphone Device list to adjust the volume of your microphone. Ideally, the calibration indicator should stay within the green zone when speaking at a normal volume. If the indicator is constantly red, you should reduce the volume slider.
 
-The **Listen Device** is the audio device that will be used as the output device for listening to voice transmissions from the controllers and other pilots.
+![Settings](media/Settings_Audio.png ':size=507')
 
-The audio device lists will automatically refresh if xPilot detects an audio device is removed or plugged in.
+The **Microphone Device** is utilized for communication with VATSIM controllers. Whenever you modify your microphone device, it is necessary to recalibrate the microphone volume. You can adjust the volume of your microphone using the slider located below the Microphone Device list. Ideally, the calibration indicator should remain within the green zone when speaking at a normal volume. If the indicator consistently shows red, it is advisable to lower the volume slider.
 
-You can also adjust the COM1 and COM2 volumes here. Alternatively, you can adjust the COM1 and COM2 volumes via the volume knobs in the aircraft radio panel. **Note:** The volume sliders in the xPilot settings do not reflect adjustments made via the aircraft radio stack volume knobs, and vice versa. So, if you adjust the radio volumes inside the aircraft, the volume sliders will not reflect this change; when you restart xPilot, the volumes will revert to the previous volume levels as set by the volume sliders.
+The **Headset Device** and **Speaker Device** serves as the audio output devices for listening to voice transmissions from controllers and other pilots. You can configure xPilot to send all COM1 audio to your headset device and COM2 audio to your speaker device, or vice-versa.
 
-If the **Allow aircraft radio stack volume knobs to control radio volume** is checked, the radio volume can be controlled using the volume knobs in your aircraft. This will work as long as the aircraft your flying uses the standard volume dataref; some aircraft developers use custom datarefs.
+If the **Split Output Audio Channels** option is enabled, COM1 and COM2 audio will be split into separate audio channels (COM1 will be routed to left channel [left ear] and COM2 will be routed to the right channel [right ear]).
+
+The audio device lists will automatically update if xPilot detects the removal or connection of an audio device.
+
+You can also adjust the volumes for COM1 and COM2 here. Alternatively, you have the option to adjust the COM1 and COM2 volumes using the volume knobs on the aircraft's radio panel. 
+
+**Note**: It's important to note that changes made to the radio volumes inside the aircraft will not be reflected in the volume sliders in xPilot settings, and vice versa. When you restart xPilot, the volumes will return to their previous levels as set by the volume sliders.
+
+If the **Allow aircraft radio stack volume knobs to control radio volume** option is enabled, you can use the volume knobs in your aircraft to control the radio volume. This functionality is applicable as long as the aircraft you are flying utilizes the standard volume dataref; however, certain aircraft developers may use custom datarefs.
 
 ### Radio Effects
-If the **Enable HF Squelch** is enabled, you will not hear the static white noise when tuned to an HF frequency. If you want a realistic HF frequency experience, leave this option off.
+If the **Enable HF Squelch** option is activated, the static white noise typically heard when tuned to an HF frequency will be eliminated. However, if you prefer a realistic HF frequency experience, it is recommended to keep this option disabled.
 
-If you check the box labeled **Disable Radio Effects**, the incoming voice audio will not be filtered to sound like a VHF radio &mdash; it'll sound more like a VOIP call. Generally, you want to leave this option unchecked so that the audio sounds realistic and akin to real-world radios.
+By checking the box labeled **Disable Radio Effects**, the incoming voice audio will not be filtered to replicate the sound of a VHF radio. Instead, it will resemble more of a VOIP call. Generally, it is advisable to leave this option unchecked to ensure that the audio maintains a realistic and authentic resemblance to real-world radios.
+
+### Push to Talk
+To configure your Push to Talk (PTT) button, you need to set it within X-Plane. For detailed instructions on assigning your PTT, please refer to the [How to Assign PTT](xplane?id=how-to-assign-ptt) section.
 
 ## Connecting to VATSIM
-To connect to VATSIM, click the <span class="toolbar-btn">CONNECT</span> button. A connection window will appear. The callsign and aircraft type code fields are required. The SELCAL code is optional.
+To connect to VATSIM, simply click on the <span class="toolbar-btn">CONNECT</span> button. This action will open a connection window. Ensure that you fill in the callsign and aircraft type code fields as they are required. The SELCAL code field is optional.
 
-The aircraft type code is the 3 to 4 character ICAO identifier code for the aircraft you are flying. This will allow other users to see you in their sim as the correct aircraft type. xPilot will suggest type codes based on what you type in the type code field. You can search by ICAO code, aircraft model or manufacturer, and xPilot will present you with a list of results to choose from. 
+The aircraft type code refers to the 3 to 4 character ICAO identifier code for the aircraft you are currently operating. This allows other users to see you accurately represented in their simulators with the correct aircraft type. As you enter the type code, xPilot will suggest relevant codes based on your input. You can search by ICAO code, aircraft model, or manufacturer, and xPilot will present you with a list of results to choose from.
 
 ![Type Code Suggestions](media/TypeCodeSearch.gif ':size=250')
 
-If you specify an invalid aircraft type code, you will a warning message prompting you to confirm your selection. You may continue connecting using the unknown type code, however, other network users may not see your aircraft rendered correctly in their simulator.
+If you input an invalid aircraft type code, a warning message will appear, asking you to confirm your selection. While you can proceed with the connection using the unknown type code, it's important to note that other users on the network may not see your aircraft rendered correctly in their simulators.
 
 ![Invalid Type Code](media/InvalidTypeCode.png ':size=250')
 
-Press the <span class="blue-btn">Connect to VATSIM</span> button when you are ready to connect to the network. If the connection was successful, you will see a message in the main message area, and the CONNECT button will turn blue and its label will change to DISCONNECT. If there are controllers within range of your location, they will appear in the controller list on the left-hand side of the client. 
+When you are ready to connect to the network, simply click the <span class="blue-btn">Connect to VATSIM</span> button. If the connection is successful, a message will be displayed in the main message area, and the CONNECT button will turn blue with its label changing to DISCONNECT. If there are controllers within range of your location, their information will be listed on the left-hand side of the client under the controller list.
 
-Your callsign will appear next to the SETTINGS button after successfully connecting to the network.
+Upon successfully connecting to the network, your callsign will be shown next to the SETTINGS button.
 
-!> See [Shared Cockpit/Observer Mode](client?id=shared-cockpit-observer-mode) section for details on how to use the shared cockpit (observer) mode.
+Please refer to the [Shared Cockpit/Observer Mode](client?id=shared-cockpit-observer-mode) section for detailed instructions on how to utilize the shared cockpit (observer) mode.
 
 ## Controlling the Transponder
-When flying on VATSIM, you will need to toggle your transponder between Standby Mode and Mode C. Mode C is used when you enter the active runway and any time you are airborne. Mode C allows the controller to see your altitude on their radar scope. Mode C is also used on the ground at some airports if they are using an airport surface surveillance system, such as ASDE-X. This will be noted on the airport diagram chart or in the controller's ATIS information.
+When operating on VATSIM, it is necessary to switch your transponder between Standby Mode and Mode C. Mode C is employed when you are positioned on the active runway or when you are airborne. Enabling Mode C enables controllers to view your altitude on their radar scopes. Additionally, Mode C is utilized on the ground at certain airports that employ an airport surface surveillance system, such as ASDE-X. This information will be indicated on the airport diagram chart or provided in the controller's ATIS information.
 
-**Toggle Transponder Mode**: To toggle the transponder mode, you can click the <span class="toolbar-btn">MODE C</span> button on the client. The button will turn green color when Mode C is on. You can also toggle the transponder mode directly in your aircraft's transponder panel in the sim.
+**Toggle Transponder Mode**: To switch the transponder mode, you can simply click on the <span class="toolbar-btn">MODE C</span> button within the client. The button will turn green when Mode C is activated. Alternatively, you can directly toggle the transponder mode using your aircraft's transponder panel within the simulator.
 
 ![Mode C](media/ModeC.png ':size=70')
 
-**Squawking Ident**: a controller may ask you to squawk ident. This causes your data tag to appear differently on the controller's radar scope, helping them locate you in their airspace. If you are asked to squawk ident, you can press the <span class="toolbar-btn">IDENT</span> button on the client, or in your aircraft's transponder panel in the sim. The IDENT button will light up green when xPilot has sent the ident signal to the network. When the ident is finished, the button will return to its normal state.
+**Squawking Ident**: At times, a controller may request you to squawk ident. This action alters the appearance of your data tag on the controller's radar scope, making it easier for them to locate you within their airspace. If instructed to squawk ident, you can press the <span class="toolbar-btn">IDENT</span> button within the client or on your aircraft's transponder panel in the simulator. The IDENT button will illuminate in green once xPilot has transmitted the ident signal to the network. Once the ident process is completed, the button will return to its regular state.
 
 ![Transponder Ident](media/TransponderIdent.png ':size=74')
 
 ## Communicating with Controllers
-When you connect to VATSIM, all controllers in range will be displayed in the controller list along the left side of the xPilot client window, grouped by facility type. Each entry in the list will have the controller's callsign and frequency. If you hover over the callsign, a popup label will appear displaying the controller's name.
+Upon connecting to VATSIM, the controller list will be displayed along the left side of the xPilot client window. Controllers will be grouped by facility type, and each entry in the list will show the controller's callsign and frequency. Hovering over a callsign will trigger a popup label displaying the controller's name.
 
-In order to communicate with a controller, simply tune the controller's frequency in your aircraft's radio panel using either the COM1 or COM2 radio. The radio must also be selected for transmit and receive. (You can also tune a frequency for receive only; this is helpful when listening to the ATIS on the second COM radio). At the top left of the xPilot client window, you will see the radio stack panel. The TX/RX labels will turn white when transmit and receive are enabled for that COM radio.
+To communicate with a controller, simply tune their frequency on your aircraft's radio panel using either the COM1 or COM2 radio. Ensure that the radio is set to both transmit and receive modes. (You can also tune a frequency for receive only, which is useful when listening to the ATIS on the second COM radio.) The radio stack panel, located at the top left of the xPilot client window, displays the status of the radios. The TX/RX labels will appear white when transmit and receive modes are enabled for the respective COM radio.
 
-In the example below, COM1 is enabled for transmit and receive, as indicated by the white TX/RX indicators. COM2 transmit and receive is turned off.
+In the provided example, COM1 is enabled for both transmit and receive, as indicated by the white TX/RX indicators, while COM2 has transmit and receive modes turned off.
 
-![Radio Panel](media/RadioPanel.png ':size=76')
+![Radio Panel](media/RadioPanel.png ':size=74')
 
-To communicate with a controller via text radio messages, ensure you have the main "Messages" tab selected, type in your message in the text command line at the bottom of the message area and press Enter on your keyboard to send the message. xPilot will send the text message out as a text radio message on whichever COM frequency you have selected for transmit.
+The "Speaker" and "Headset" icon allows you to toggle if the audio for the respective radio is routed through either the headset or speaker device, as configured in the xPilot audio settings.
 
-Incoming text radio messages are shown in the main messages area. If you are listening (receiving) on more than one COM radio, the text radio message will be prefixed with the frequency it arrived on.
+To communicate with a controller using text radio messages, make sure you have the "Messages" tab selected. Then, type your message in the text command line located at the bottom of the message area and press Enter on your keyboard to send the message. xPilot will transmit the text message as a text radio message on the COM frequency that you have selected for transmit.
 
-If an incoming text radio message is directed at you specifically, an alert sound will play out of your computer's default audio device, and the message will appear in a cyan (light blue) color. Text radio messages directed towards other pilots (or towards no one in particular) will appear in a gray color.
+Incoming text radio messages will be displayed in the main messages area. If you are listening (receiving) on multiple COM radios, the text radio message will be prefixed with the frequency on which it was received.
 
-**Your aircraft's avionics must be powered on for the COM radios to work. If your avionics are not powered, the TX and RX indicators will be grayed out for both COM radios (see screenshot below) and you will not be able to receive or transmit**
+If an incoming text radio message is specifically directed to you, your computer's default audio device will play an alert sound, and the message will appear in a cyan (light blue) color. Text radio messages intended for other pilots or not directed to anyone in particular will appear in gray color.
+
+**Note that your aircraft's avionics must be powered on for the COM radios to function. If your avionics are not powered, the TX and RX indicators for both COM radios will appear grayed out, as shown in the screenshot below, and you will not be able to receive or transmit.**
 
 ![Radios No Power](media/RadiosNoPower.png ':size=74')
 
-!> If xPilot is having trouble syncing your radio transmit and receive status, you can force xPilot to transmit and/or receive on a specific radio instead.<br/><br/>To force xPilot to receive on a specific COM radio, use the `.rx` dot command. For example, to force receiving on COM1, you would enter `.rx com1 on` in the command line and press enter.<br/><br/>To force xPilot to transmit on a specific COM radio, use the `.tx` dot command. For example to force transmitting on COM2, you would type `.tx com2` in the command line and press enter.<br/><br/>See the [Dot Commands](client?id=dot-commands) section for more information.
+!> If you encounter issues with xPilot not properly synchronizing your radio transmit and receive status, you can manually force xPilot to transmit and/or receive on a specific radio.<br/><br/>To force xPilot to receive on a specific COM radio, you can use the `.rx` dot command. For instance, if you want to receive on COM1, you can enter `.rx com1 on` in the command line and press Enter.<br/><br/>To force xPilot to transmit on a specific COM radio, you can utilize the `.tx` dot command. For example, if you want to transmit on COM2, you can enter `.tx com2` in the command line and press Enter.<br/><br/>For further information, refer to the [Dot Commands](client?id=dot-commands) section.
 
 ## SELCAL
-If you specified a SELCAL (Selective Calling) code when connecting to VATSIM, controllers will have the ability to send a SELCAL alert to your aircraft using that code. This is used to get your attention during long flights over areas where standard VHF radio doesn’t have enough range, and noisy HF frequencies are used instead. The pilot will typically turn down the volume so he doesn’t have to listen to the HF static, and controllers will send a SELCAL alert to get his attention when they need to talk to him over HF.
+If you have specified a SELCAL (Selective Calling) code when connecting to VATSIM, controllers have the capability to send a SELCAL alert to your aircraft using that code. This feature is utilized during long flights over areas where the standard VHF radio does not provide sufficient range, and noisy HF frequencies are used instead. Pilots often decrease the volume to avoid listening to the HF static, and controllers can send a SELCAL alert to grab their attention when communication is required over HF.
 
-If a SELCAL alert is received, a tone will sound, and a message will be displayed in the main message area alerting you.
+When a SELCAL alert is received, you will hear a tone, and a message will appear in the main message area to notify you of the alert.
 
 ## Request Controller Info
-Each controller on VATSIM maintains their controller information (also known as a text ATIS). To request this information, double-click on the controller entry in the controller list. The controller information will appear in the main message area.
+To obtain the controller information or text ATIS on VATSIM, you can double-click on the controller entry in the controller list. This action will display the controller information in the main message area.
 
-You can also request the controller information using the `.atis` dot command. Refer to the section on [Dot Commands](client?id=dot-commands) for details.
+Alternatively, you can use the `.atis` dot command to request the controller information. For more information on dot commands, please refer to the section on [Dot Commands](client?id=dot-commands).
 
 ## Flight Plan
-Flight plans must be filed using the myVATSIM Flight Plan service website. If you click the <span class="toolbar-btn">FLIGHT PLAN</span> button in the client, your default web browser will open to the myVATSIM flight plan website. If you are not authenticated, you will be asked to enter your VATSIM credentials (ID and Password).
+To file flight plans on VATSIM, you need to use the myVATSIM Flight Plan service website. To access this website, simply click the <span class="toolbar-btn">FLIGHT PLAN</span> button in the client. This action will open your default web browser and take you to the myVATSIM flight plan website.
+
+If you haven't already authenticated yourself, you will be prompted to enter your VATSIM credentials, which include your VATSIM ID and Password. Once you have successfully logged in, you can proceed to file your flight plan.
 
 ## Private Messages
-Occasionally, you may wish to contact other users (pilots or controllers) via private message. Or they may contact you via private message. When a new private message arrives, a tab will be added with the sender’s callsign, highlighted in yellow. When you click on the tab, the message area for that chat will be displayed and the tab text will turn white. The first line will show the user’s name. If a new message arrives while the tab is not active, the tab will turn yellow again.
+When you want to communicate privately with other users on VATSIM, such as pilots or controllers, you can use the private messaging feature. When a new private message is received, a tab will be added with the sender's callsign, highlighted in yellow. Clicking on the tab will display the message area for that chat, and the tab text will turn white. If a new message arrives while the tab is not active, the tab will turn yellow again to indicate a new message.
 
-To reply to a private message, type your message in the command line at the bottom of the chat tab and press enter. Your outgoing message wil appear in the message area in a cyan color. Incoming messages will appear in white.
+To reply to a private message, simply type your message in the command line at the bottom of the chat tab and press enter. Your outgoing message will appear in the message area in cyan color. Incoming messages from the other user will appear in white.
 
-You can initiate a private chat session by right-clicking on a controller in the controller list and choose "Open Private Chat" from the context menu. This will create a new tab (or switch to an existing tab if one exists). You can type your message and press enter to send it.
+You can initiate a private chat session by right-clicking on a controller in the controller list and selecting "Open Private Chat" from the context menu. This action will create a new tab for the chat, or switch to an existing tab if one already exists. You can then type your message and press enter to send it.
 
-You can also initiate a private chat session by using the `.chat` dot command. Refer to the section on [Dot Commands](client?id=dot-commands) for details.
+Alternatively, you can initiate a private chat session by using the `.chat` dot command. More information about dot commands can be found in the [Dot Commands](client?id=dot-commands) section.
 
 ## Dot Commands
 xPilot supports the following dot commands, which can be entered in the command line just below the message history in any tab.
@@ -133,7 +155,7 @@ xPilot supports the following dot commands, which can be entered in the command 
 | `.com2 <Frequency>`| Sets the COM2 radio to the specified frequency.
 | `.rx com# On\|Off`| Toggles receiving on the specified com radio. For example: `.rx com1 on`
 | `.tx com#`| Enables the COM1 or COM2 radio for transmit. For example: `.tx com2`
-| `.towerview <IP-Address> <Callsign>`| Connects xPilot to a proxy server (such as provided by EuroScope) in observer mode for the purpose of creating a tower view. The IP address defaults to 127.0.0.1 (localhost) and the callsign defaults to TOWER.
+| `.towerview`| Connects xPilot to the network in tower view mode.
 | `.ignore <Callsign>` | Adds the specified aircraft to the ignore list. xPilot will not render an aircraft model for any aircraft on the ignore list. The list is cleared when xPilot is closed. |
 | `.unignore <Callsign>` | Removes the specified aircraft from the ignore list. |
 | `.ignorelist` | Lists all the callsigns currently in the ignore list. |
@@ -142,34 +164,47 @@ xPilot supports the following dot commands, which can be entered in the command 
 | `.appdata`| Opens the client application data folder using the system file explorer.
 
 ## Disconnecting from VATSIM
-When you are ready to disconnect from VATSIM, click the <span class="blue-btn">DISCONNECT</span> button. The controller list will be cleared and all the aircraft in the sim will be removed. 
+When you wish to disconnect from VATSIM, simply click on the <span class="blue-btn">DISCONNECT</span> button in the xPilot client. This will initiate the disconnection process.
 
-xPilot will automatically disconnect you from the network if you shut down the sim. You will also be disconnected if you switch airports or load a different flight in the sim.
+Additionally, xPilot will automatically disconnect you from the network in the following situations:
+- Shutting down the flight simulator
+- Switching airports within the flight simulator
+- Loading a different flight or scenario in the flight simulator
+
+Upon disconnection, the controller list will be cleared, and all aircraft models associated with VATSIM will be removed from the simulator environment.
 
 ## Running xPilot Over a Network
 
-If you have a networked setup with one or more computers running your X-Plane visuals, you can configure xPilot to inject aircraft onto each of these machines. You must first run the xPilot installer on each of the machines so that the xPilot plugin is installed.
+To use xPilot over a network with multiple computers running X-Plane visuals, follow these steps:
 
-To use xPilot over a network, you must first enable TCP/IP support. Locate the xPilot plugin configuration file (`X-Plane/Resources/plugins/xPilot/Resources/Config.json`) and open it in a text editor. Change the `UseTcpSocket` option to `true`. Save and close the configuration file. If you have multiple X-Plane instances for each visual screen, you will need to change this option on each instance. **<span style="color:red;">X-Plane must be closed before you update the configuration file.</span>**
+1. Install the xPilot plugin on each computer running X-Plane visuals using the xPilot installer.
 
-In xPilot, use the command `.visualip <VisualMachine1> <VisualMachine2>...` to set the IP addresses of your visual machines. For example, `.visualip 192.168.1.50 192.168.1.60`. **You must restart xPilot after setting the visual machine IP(s) for the changes to take effect.** The machine IP addresses with be saved in the xPilot client configuration for the next time you launch xPilot. To clear the visual machine IP(s), use the command `.visualip` (without the IP addresses).
+2. Enable TCP/IP support by modifying the xPilot plugin configuration file. Locate the `Config.json` file in the `X-Plane/Resources/plugins/xPilot/Resources/` directory. Open it with a text editor and change the value of the `UseTcpSocket` option to `true`. Save and close the file. Repeat this step for each X-Plane instance on the visual machines. Note that X-Plane should be closed before modifying the configuration file.
 
-Alternatively, you can run the xPilot client on a separate computer from your machine running X-Plane. Use the command `.simip` to set the IP address of the computer running your X-Plane instance. For example: `.simip 192.168.1.100`. To clear the IP address, enter the command `.simip` (without an IP address). The xPilot client must be closed before making changes to the configuration file. **<span style="color:red;">Only run this command if you know what you're doing!</span>**
+3. Start xPilot and use the command `.visualip` followed by the IP addresses of your visual machines. For example, `.visualip 192.168.1.50 192.168.1.60`. Restart xPilot for the changes to take effect. The visual machine IP addresses will be saved in the xPilot client configuration for future use. To clear the visual machine IP addresses, use the command `.visualip` without specifying any IP addresses.
+
+Alternatively, if you want to run the xPilot client on a separate computer from the one running X-Plane, you can use the `.simip` command. Run xPilot on the separate computer and use the command `.simip <X-Plane_IP>` to set the IP address of the computer running X-Plane. For example, `.simip 192.168.1.100`. To clear the IP address, enter the command `.simip` without specifying an IP address. Note that the xPilot client must be closed before making changes to the configuration file, and it is recommended to use this command only if you are familiar with the setup.
+
+Remember to follow the necessary precautions and ensure that your network and system configurations are properly set up to support xPilot over a network.
 
 ## Shared Cockpit (Observer) Mode
-xPilot supports the ability to connect in observer mode so that your aircraft does not appear to other users on the network. This feature is intended for use with shared cockpit operations. To use this feature, the first pilot should connect to the network normally, and the second pilot should connect in observer mode. The second pilot must use the same callsign as the first pilot, with a letter appended to the end.
+xPilot provides support for observer mode, which allows you to connect to the network without your aircraft being visible to other users. This feature is primarily used for shared cockpit operations. To utilize observer mode, follow these steps:
 
-For example, if the first pilot’s callsign is `JBU123`, the second pilot should use `JBU123A`. Any letter suffix will work.
+1. The first pilot should connect to the network as usual using their desired callsign, such as `JBU123`.
+
+2. The second pilot, who wishes to join in observer mode, should append a letter to the end of the callsign used by the first pilot. For example, the second pilot can use `JBU123A`. You can use any letter as a suffix.
+
+By using this approach, the second pilot will be able to connect to the network as an observer without their aircraft being visible to other users.
 
 ## Downloading Updates
-Each time you launch xPilot, it will check if there is a new version available. If there is a new version available, you will be prompted to download and install it.
+Every time you start xPilot, it automatically checks for updates. If a new version is available, you will receive a prompt to download and install it.
 
 **<span style="color:red;">X-Plane MUST be closed before installing an xPilot update.</span>**
 
 ![New Version](media/NewVersionAvailable.png ':size=250')
 
-If you click <span class="gray-btn">No</span> you will be prompted again the next time you open xPilot.
+If you choose to click <span class="gray-btn">No</span>, you will be reminded about the update the next time you launch xPilot.
 
-Clicking <span class="blue-btn">Yes</span> will begin the download process. Once the download completes xPilot will close and the installer will open. On macOS, the disk image will mount, and a Finder window will open with the installer that needs to be launched.
+Clicking <span class="blue-btn">Yes</span> will initiate the download process. Once the download is complete, xPilot will automatically close, and the installer will open. On macOS, a disk image will be mounted, and a Finder window will appear with the installer that needs to be launched.
 
 ![New Version Downloading](media/NewVersionDownloading.png ':size=250')
