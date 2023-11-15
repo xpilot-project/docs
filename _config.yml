@@ -34,7 +34,7 @@ plugins:
   - jekyll-target-blank
 
 aux_links:
-  "Download":
+  "Download xPilot":
     - "https://github.com/xpilot-project/xpilot/releases"
 
 gh_edit_link: true
