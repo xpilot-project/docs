@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Sans+Pro:300,400,600");
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: none;
+  -webkit-touch-callout: none;
+  box-sizing: border-box
+}
+
+body,
+html {
+  height: 100%
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: #34495e;
+  font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
+  font-size: 15px;
+  letter-spacing: 0;
+  margin: 0;
+  overflow-x: hidden
+}
+
+.cover {
+  align-items: center;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background: #272C2E !important;
+  text-align: center;
+  color: #ffffff;
+}
+
+.cover .cover-main {
+  flex: 1;
+  margin: -20px 16px 0;
+  text-align: center;
+  position: relative
+}
+
+.cover a {
+  color: inherit
+}
+
+.cover a,
+.cover a:hover {
+  text-decoration: none
+}
+
+.cover p {
+  line-height: 1.5rem;
+  margin: 1em 0
+}
+
+.logo {
+  font-size: 6em;
+  color: #ffffff;
+  position: relative;
+  margin-top: 40px;
+}
+
+.logo:after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 3px solid #0164AD;
+  left: 50%;
+  top: 60%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
+  border-width: 5px 0 0 5px;
+  border-radius: 50%;
+}
+
+.screenshot {
+  position: absolute;
+  left: 50%;
+  margin-left: -435px;
+  bottom: 0%;
+  width: 840px;
+  height: 273px;
+  background: url('/assets/images/Client.png') no-repeat;
+  -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.85);
+  -moz-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.85);
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.85);
+}
