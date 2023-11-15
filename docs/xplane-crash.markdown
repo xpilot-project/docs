@@ -1,3 +1,9 @@
+---
+layout: page
+title: X-Plane Crash
+nav_order: 6
+---
+
 # X-Plane Quit Unexpectedly
 In the event of an unexpected quit or crash (referred to as a "Crash to Desktop" or CTD) in X-Plane, you can refer to the `Log.txt` file to determine the cause. The last line of the `Log.txt` will typically indicate the reason for the crash. If xPilot is responsible for the crash, the last line will end with `--=={This application has crashed because of the plugin: xPilot}==--`.
 

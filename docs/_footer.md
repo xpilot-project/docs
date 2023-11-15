@@ -1,1 +1,0 @@
-Copyright &copy; Justin Shannon. 2022
