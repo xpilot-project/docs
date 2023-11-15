@@ -37,6 +37,15 @@ aux_links:
   "Download":
     - "https://github.com/xpilot-project/xpilot/releases"
 
+gh_edit_link: true
+gh_edit_link_text: "Edit this page on GitHub."
+gh_edit_repository: "https://github.com/xpilot-project/docs"
+gh_edit_branch: "jekyll"
+gh_edit_view_mode: "tree"
+
+ga_tracking: G-ZYV3ZQ7XVB
+ga_tracking_anonymize_ip: true
+
 callouts:
   important:
     title: Important
