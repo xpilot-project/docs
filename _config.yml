@@ -35,12 +35,12 @@ plugins:
 
 aux_links:
   "Download xPilot":
-    - "https://github.com/xpilot-project/xpilot/releases"
+    - "https://github.com/xpilot-project/xpilot/releases/latest"
 
 gh_edit_link: true
 gh_edit_link_text: "Edit this page on GitHub."
 gh_edit_repository: "https://github.com/xpilot-project/docs"
-gh_edit_branch: "jekyll"
+gh_edit_branch: "main"
 gh_edit_view_mode: "tree"
 
 ga_tracking: G-ZYV3ZQ7XVB
