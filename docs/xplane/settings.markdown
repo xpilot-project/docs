@@ -20,7 +20,9 @@ All xPilot Plugin settings are saved to a file named `Config.json` in the `X-Pla
 
 * **Notification Panel Position**<br/>This option allows you to set the position of the Notification Panel in the X-Plane window.
 
-* **Show Callsign Labels**<br/>If this option is enabled, floating callsign labels will be placed above all aircraft in the sim.
+* **Show Aircraft Labels**<br/>If this option is enabled, floating labels will be placed above all aircraft in the sim.
+
+* **Aircraft Label Type**<br/>Select the type of label to show above other aircraft in the sim. Available options are: Callsign, Aircraft Type, Callsign + Aircraft Type, and Airline Code + Aircraft Type.
 
 * **Callsign Label Color**<br/>You can set a custom or pre-defined aircraft label color (if the callsign labels are enabled). There are four pre-defined colors: yellow, red, green and cyan. You can alternatively pick your own color by clicking the color square to the left of *Or Choose Color*.
 
