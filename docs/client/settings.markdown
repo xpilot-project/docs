@@ -23,6 +23,8 @@ The Network Server dropdown menu provides only one option, "AUTOMATIC," which he
 
 The options listed in the "Notifications" tab allows you to personalize which events will trigger aural sound notifications and cause the application icon in the system taskbar to flash or bounce to capture your attention.
 
+The **Notification Audio Device** dropdown allows you to specify which audio device xPilot should use to play notification sounds. If no device is selected, xPilot will use the default system output device.
+
 ![Settings Window](/assets/images/Settings_Notifications.png)
 
 ## Audio

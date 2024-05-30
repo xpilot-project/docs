@@ -12,6 +12,8 @@ Available X-Plane Commands:
 
 * **Radio Push to Talk (PTT)**<br/>Bind `xPilot: Radio Push-To-Talk (PTT)` command to transmit on a radio frequency while connected to the network.
 
+* **Split Audio Channels**<br/>Bind `xPilot: Split Audio Channels` command to split COM1 and COM2 audio into separate audio channels (COM1 will be routed to left channel – *left ear*, and COM2 will be routed to the right channel – *right ear*). This is a shortcut for enabling Split Audio Channels in the xPilot Settings.
+
 * **Toggle Default X-Plane ATIS**<br/>Bind `xPilot: Toggle Default X-Plane ATIS` command to enable or disable the default X-Plane ATIS. xPilot will automatically disable the default ATIS when connected to the network, but you may enable it again using this command (or via the xPilot plugin menu).
 
 * **Toggle Nearby ATC Window**<br/>Bind `xPilot: Toggle Nearby ATC Window` command to show or hide the Nearby ATC window.
